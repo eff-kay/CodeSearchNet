@@ -134,9 +134,9 @@ def run(arguments, tag_in_vcs=False) -> None:
     batch_size = arguments.get('--batch-size')
     if batch_size:
         hyperparameters['batch_size'] = int(batch_size)
-    use_parent = arguments.get('--use-parent')
-    if not use_parent:
-        hyperparameters['use_parent'] = bool(use_parent)
+    # use_parent = arguments.get('--use-parent')
+    # if not use_parent:
+    #     hyperparameters['use_parent'] = bool(use_parent)
 
     # hyperparameters['code_use_bpe'] = False
     # hyperparameters['query_use_bpe'] = False
