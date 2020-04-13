@@ -4,7 +4,7 @@ from src.utils import my_ast
 from src.utils.codegen import *
 import subprocess
 
-from parent_node_parse_helpers import dfs_traversal_with_parents
+from .parent_node_parse_helpers import dfs_traversal_with_parents
 import pandas as pd
 import os
 
