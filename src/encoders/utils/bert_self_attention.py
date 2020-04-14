@@ -229,6 +229,10 @@ class BertModel(object):
             parent_attention_mask = create_attention_mask_from_input_mask(
                     parent_ids, parent_mask)
 
+            identity = tf.eye(seq_length)
+            identity = tf.reshape(identity, [1, seq_length, seq_length])
+
+            parent_attention_mask = tf.tile(identity, [batch_size,1,1])
 
             parent_embedding_output, parent_embedding_table = embedding_lookup(
                 input_ids=parent_ids,
@@ -718,10 +722,20 @@ def attention_layer(from_tensor,
   # attention scores.
   # `attention_scores` = [B, N, F, T]
   attention_scores = tf.matmul(query_layer, key_layer, transpose_b=True)
+  # if num_attention_heads == 1:
+  #     attention_scores = tf.Print(attention_scores, [attention_scores[0][0][i] for i in range(10)],
+  #                               "ATTENTION MASK: unscaled attention scores\n", summarize=10)
+  #     query_layer = tf.Print(query_layer, [query_layer[0][0][i] for i in range(10)],
+  #                               "ATTENTION MASK: query\n", summarize=10)
+  #     key_layer = tf.Print(key_layer, [key_layer[0][0][i] for i in range(10)],
+  #                               "ATTENTION MASK: key\n", summarize=10)
   attention_scores = tf.multiply(attention_scores,
                                  1.0 / math.sqrt(float(size_per_head)))
 
   if attention_mask is not None:
+    # if num_attention_heads==1:
+    #     attention_mask = tf.Print(attention_mask, [attention_mask[0][i] for i in range(10)], "ATTENTION MASK: original_attention_masks\n", summarize=10)
+
     # `attention_mask` = [B, 1, F, T]
     attention_mask = tf.expand_dims(attention_mask, axis=[1])
 
@@ -730,14 +744,25 @@ def attention_layer(from_tensor,
     # positions we want to attend and -10000.0 for masked positions.
     adder = (1.0 - tf.cast(attention_mask, tf.float32)) * -10000.0
 
+    # if num_attention_heads==1:
+    #   adder = tf.Print(adder, [adder[0][0][i] for i in range(10)], "ATTENTION MASK: adders\n", summarize=10)
+    #   attention_scores = tf.Print(attention_scores, [attention_scores[0][0][i] for i in range(10)], "ATTENTION MASK: raw attention_scores\n", summarize=10)
+
     # Since we are adding it to the raw scores before the softmax, this is
     # effectively the same as removing these entirely.
     attention_scores += adder
+    # if num_attention_heads==1:
+    #   attention_scores = tf.Print(attention_scores, [attention_scores[0][0][i] for i in range(10)], "ATTENTION MASK: added attention_scores\n", summarize=10)
 
   # Normalize the attention scores to probabilities.
   # `attention_probs` = [B, N, F, T]
   attention_probs = tf.nn.softmax(attention_scores)
 
+  # if num_attention_heads == 1:
+  #   attention_probs = tf.Print(attention_probs, [attention_probs[0][0][i] for i in range(10)], "ATTENTION MASK:parent attention probs\n", summarize=10)
+  # else:
+  #   attention_probs = tf.Print(attention_probs, [attention_probs[0][0][i] for i in range(10)],
+  #                                "ATTENTION MASK: normal attention probs\n", summarize=10)
   # This is actually dropping out entire tokens to attend to, which might
   # seem a bit unusual, but is taken from the original Transformer paper.
   # attention_probs = dropout(attention_probs, attention_probs_dropout_prob)
