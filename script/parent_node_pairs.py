@@ -4,7 +4,7 @@ from src.utils import my_ast
 from src.utils.codegen import *
 import subprocess
 
-from .parent_node_parse_helpers import dfs_traversal_with_parents
+from parent_node_parse_helpers import dfs_traversal_with_parents
 import pandas as pd
 import os
 
@@ -42,74 +42,44 @@ from pprint import pprint
 if __name__=='__main__':
     print('something')
 
-    #[26045, 28475]
-
-    path = 'resources/data/python/final/jsonl/old_train/python_train_0.jsonl.gz'
-    s_path = 'resources/data/python/final/jsonl/train/python_train_0_dfs_parent.jsonl.gz'
-
-    a = RichPath.create(path)
-    s = RichPath.create(s_path)
-
-    print('started')
-    b = list(a.read_as_jsonl())
-
-    b = sorted(b, key=lambda v: len(v['code_tokens']))
-    templist = []
-    c = []
-    for idx, sample in enumerate(b):
-        print("sample {} in progress".format(idx))
-        # print(sample['code'])
-
-        if idx == 19 or sample['sha']=='618d6bff71073c8c93501ab7392c3cc579730f0b':
-            print(sample['code'])
-
-        dfs, parent_dfs = convert_code_to_tokens(sample['code'])
-        if dfs == [] or parent_dfs==[]:
-            templist.append(idx)
-        else:
-            b[idx]['code_tokens'] = dfs
-            b[idx]['parent_dfs'] = parent_dfs
-            c.append(b[idx])
-
-    s.save_as_compressed_file(c)
-    #     df = pd.DataFrame([dfs, parent_dfs])
-    #     print(parent_dfs)
-    print('finished', templist, len(templist), len(c))
 
 
-    # code= '''def f(a, b=1, c=2, *d, e, f=3, **g):
-    #              pass'''
-    #
-    # code = b[2]['code']
-    # print(code)
-    # code = '''ip = socket.gethostbyname(host)'''
-    #
-    # code = '''ip = socket.gethostbyname(host)\n[ port , request_size , num_requests , num_conns ] = map (
-    # string .atoi , sys . argv [2:]
-    # )\nchain = build_request_chain ( num_requests , host , request_size )'''
+    root_path = '../resources/data/python/final/jsonl/'
+    for subdir, dirs, files in os.walk(root_path, topdown=True):
+        current_path = os.getcwd()
 
-    # code = '''from foo import bar as b, car as c, dar as d'''
-    # print(convert_code_to_tokens(code))
+        for file in files:
+            filepath = subdir + os.sep + file
 
-#     code ='''print('something')
-# try:
-#     a+1
-# except IOError:
-#     return 1
-# else:
-#     a+2
-# finally:
-#     return 2'''
+            if filepath.endswith(".gz"):
+                s_path = root_path + 'dfs_informed/' + subdir[len(root_path):]
+                if not os.path.exists(s_path):
+                    os.makedirs(s_path)
+
+                a = RichPath.create(filepath)
+                s = RichPath.create(s_path + os.sep + file)
+
+                b = list(a.read_as_jsonl())
+
+                b = sorted(b, key=lambda v: len(v['code_tokens']))
+                templist = []
+
+                c = []
 
 
+                for idx, sample in enumerate(b):
+                    print("sample {} in progress".format(idx))
+                    # print(sample['code'])
 
+                    if idx == 19 or sample['sha']=='618d6bff71073c8c93501ab7392c3cc579730f0b':
+                        print(sample['code'])
 
-#     # code = '''func(a, b=c, *d, **e)'''
-#     # a, b = parse_file_with_parents(code)
-#     # df = pd.DataFrame([a, b])
-#     # print(df.T)
-#
-#     result_tree = parse_file_with_parents(code)
-    # #
-    # # # print(pd.read_json(result_tree))
-    # pprint(result_tree)
+                    dfs, parent_dfs = convert_code_to_tokens(sample['code'])
+                    if dfs == [] or parent_dfs==[]:
+                        templist.append(idx)
+                    else:
+                        b[idx]['code_tokens'] = dfs
+                        b[idx]['parent_dfs'] = parent_dfs
+                        c.append(b[idx])
+
+                s.save_as_compressed_file(c)
