@@ -1,4 +1,5 @@
-
+import sys
+sys.path.append('../')
 from dpu_utils.utils import RichPath
 from src.utils import my_ast
 from src.utils.codegen import *
@@ -52,6 +53,7 @@ if __name__=='__main__':
             filepath = subdir + os.sep + file
 
             if filepath.endswith(".gz"):
+                print(file, 'is being converted.')
                 s_path = root_path + 'dfs_informed/' + subdir[len(root_path):]
                 if not os.path.exists(s_path):
                     os.makedirs(s_path)
@@ -68,11 +70,11 @@ if __name__=='__main__':
 
 
                 for idx, sample in enumerate(b):
-                    print("sample {} in progress".format(idx))
+                    #print("sample {} in progress".format(idx))
                     # print(sample['code'])
 
-                    if idx == 19 or sample['sha']=='618d6bff71073c8c93501ab7392c3cc579730f0b':
-                        print(sample['code'])
+                    #if idx == 19 or sample['sha']=='618d6bff71073c8c93501ab7392c3cc579730f0b':
+                    #    print(sample['code'])
 
                     dfs, parent_dfs = convert_code_to_tokens(sample['code'])
                     if dfs == [] or parent_dfs==[]:
@@ -81,5 +83,6 @@ if __name__=='__main__':
                         b[idx]['code_tokens'] = dfs
                         b[idx]['parent_dfs'] = parent_dfs
                         c.append(b[idx])
-
+                print("Saving ", file)
                 s.save_as_compressed_file(c)
+
