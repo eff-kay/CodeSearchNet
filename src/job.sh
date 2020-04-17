@@ -3,9 +3,9 @@
 
 #SBATCH --partition=unkillable
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=gpu:v100-32gb:4
+#SBATCH --gres=gpu:v100-32gb:2
 #SBATCH --mem=32G
-#SBATCH --time=48:00:00
+#SBATCH --time=96:00:00
 #SBATCH -o /network/home/jangeunb/CodeSearchNet/src/slurm-%j.out
 
 module load python/3.7

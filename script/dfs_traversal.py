@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 
 from dpu_utils.utils import RichPath
 from src.utils import my_ast
@@ -5,18 +7,7 @@ from src.utils.codegen import *
 import subprocess
 import os
 
-path = '../resources/data/python/final/jsonl/valid_old/python_valid_0.jsonl.gz'
-s_path = '../resources/data/python/final/jsonl/valid/python_valid_0_updated.jsonl.gz'
 
-a = RichPath.create(path)
-s = RichPath.create(s_path)
-
-print('started')
-b = list(a.read_as_jsonl())
-
-c=[]
-
-count = 0
 def convert_code_to_tokens(code):
     global count
     tree =''
@@ -43,36 +34,70 @@ def convert_code_to_tokens(code):
         return an.result
     else:
         return []
-#
-
-templist = []
-for idx, sample in enumerate(b):
-    print("sample {} in progress".format(idx))
-#    print(sample['code'])
-    if idx==5306:
-        print(sample['code'])
-
-    tokenization = convert_code_to_tokens(sample['code'])
-    if tokenization == []:
-        templist.append(idx)
-    else:
-        b[idx]['code_tokens'] = tokenization
-        c.append(b[idx])
-    # tree = my_ast.parse(sample['code'])
-    # an = SourceGenerator('    ')
-    # an.visit(tree)
-    # b[idx]['code_tokens'] = an.result
-
-s.save_as_compressed_file(c)
-print('finished', templist, len(templist), tokenization)
 
 
-# a = [3282, 10821, 15646, 15806, 15868, 15907, 15908, 15909, 15912, 15913, 15915, 15926, 16107, 16255, 16259, 16261, 16337, 16373, 16374, 16378, 16379, 16389, 16390, 16392, 16907, 16966, 16971, 17139, 17179, 21304, 21305]
-#b  = [10821, 21304]
+def main():
+    #path = '../resources/data/python/final/jsonl/valid/temp_valid_10.jsonl.gz'
+    #s_path = '../resources/data/python/final/jsonl/valid/python_valid_0_updated.jsonl.gz'
+
+    #a = RichPath.create(path)
+    #s = RichPath.create(s_path)
+
+    print('started')
+
+
+    root_path = '../resources/data/python/final/jsonl/'
+    for subdir, dirs, files in os.walk(root_path, topdown=True):
+        current_path = os.getcwd()
+
+        for file in files:
+            filepath = subdir + os.sep + file
+
+            if filepath.endswith(".gz"):
+                print("Converting ", file)
+                s_path = root_path + 'dfs/' + subdir[len(root_path):]
+                if not os.path.exists(s_path):
+                    os.makedirs(s_path)
+
+                a = RichPath.create(filepath)
+                s = RichPath.create(s_path + os.sep + file)
+
+
+                b = list(a.read_as_jsonl())
+
+                c=[]
+
+                count = 0
+                #
+
+                templist = []
+                for idx, sample in enumerate(b):
+                #    print("sample {} in progress".format(idx))
+                #    print(sample['code'])
+                #    if idx==5306:
+                #        print(sample['code'])
+
+                    tokenization = convert_code_to_tokens(sample['code'])
+                    if tokenization == []:
+                        templist.append(idx)
+                    else:
+                        b[idx]['code_tokens'] = tokenization
+                        c.append(b[idx])
+                    # tree = my_ast.parse(sample['code'])
+                    # an = SourceGenerator('    ')
+                    # an.visit(tree)
+                    # b[idx]['code_tokens'] = an.result
+                print("Saving ", file)
+                s.save_as_compressed_file(c) #SAVE
+    #print('finished', templist, len(templist), tokenization)
+
+
+    # a = [3282, 10821, 15646, 15806, 15868, 15907, 15908, 15909, 15912, 15913, 15915, 15926, 16107, 16255, 16259, 16261, 16337, 16373, 16374, 16378, 16379, 16389, 16390, 16392, 16907, 16966, 16971, 17139, 17179, 21304, 21305]
+    #b  = [10821, 21304]
 
 
 if __name__=='__main__':
-    print('something')
+    main()
 
 #     code ='''print('something')
 # try:
