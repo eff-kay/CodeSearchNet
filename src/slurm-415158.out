@@ -1,0 +1,88 @@
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: docopt in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.6.2)
+Requirement already satisfied: dpu_utils in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.2.11)
+Requirement already satisfied: more-itertools in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (8.2.0)
+Requirement already satisfied: numpy in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (1.18.2)
+Requirement already satisfied: scipy in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (1.4.1)
+Requirement already satisfied: SetSimilaritySearch in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (0.1.7)
+Requirement already satisfied: wandb in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (0.8.31)
+Requirement already satisfied: pygments in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (2.6.1)
+Requirement already satisfied: parso in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.6.2)
+Requirement already satisfied: pandas in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (1.0.3)
+Requirement already satisfied: toolz in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (0.10.0)
+Requirement already satisfied: azure-storage in /network/home/jangeunb/.local/lib/python3.7/site-packages (from dpu_utils->-r requirements.txt (line 2)) (0.36.0)
+Requirement already satisfied: tqdm in /network/home/jangeunb/.local/lib/python3.7/site-packages (from dpu_utils->-r requirements.txt (line 2)) (4.45.0)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (0.4.0)
+Requirement already satisfied: requests>=2.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (2.23.0)
+Requirement already satisfied: configparser>=3.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (5.0.0)
+Requirement already satisfied: watchdog>=0.8.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (0.10.2)
+Requirement already satisfied: python-dateutil>=2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (2.8.1)
+Requirement already satisfied: sentry-sdk>=0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (0.14.3)
+Requirement already satisfied: nvidia-ml-py3>=7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (7.352.0)
+Requirement already satisfied: psutil>=5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (5.7.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (0.2.0)
+Requirement already satisfied: GitPython>=1.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (3.1.0)
+Requirement already satisfied: Click>=7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (7.1.1)
+Requirement already satisfied: shortuuid>=0.5.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (1.0.1)
+Requirement already satisfied: six>=1.10.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (1.14.0)
+Requirement already satisfied: subprocess32>=3.5.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (3.5.4)
+Requirement already satisfied: PyYAML>=3.10 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from wandb->-r requirements.txt (line 7)) (5.3.1)
+Requirement already satisfied: pytz>=2017.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from pandas->-r requirements.txt (line 10)) (2019.3)
+Requirement already satisfied: azure-common>=1.1.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from azure-storage->dpu_utils->-r requirements.txt (line 2)) (1.1.25)
+Requirement already satisfied: cryptography in /network/home/jangeunb/.local/lib/python3.7/site-packages (from azure-storage->dpu_utils->-r requirements.txt (line 2)) (2.9)
+Requirement already satisfied: azure-nspkg>=2.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from azure-storage->dpu_utils->-r requirements.txt (line 2)) (3.0.2)
+Requirement already satisfied: idna<3,>=2.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from requests>=2.0.0->wandb->-r requirements.txt (line 7)) (2.9)
+Requirement already satisfied: certifi>=2017.4.17 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from requests>=2.0.0->wandb->-r requirements.txt (line 7)) (2019.11.28)
+Requirement already satisfied: chardet<4,>=3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from requests>=2.0.0->wandb->-r requirements.txt (line 7)) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from requests>=2.0.0->wandb->-r requirements.txt (line 7)) (1.25.8)
+Requirement already satisfied: pathtools>=0.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from watchdog>=0.8.3->wandb->-r requirements.txt (line 7)) (0.1.2)
+Requirement already satisfied: graphql-core<2,>=0.5.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from gql==0.2.0->wandb->-r requirements.txt (line 7)) (1.1)
+Requirement already satisfied: promise<3,>=2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from gql==0.2.0->wandb->-r requirements.txt (line 7)) (2.3)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from GitPython>=1.0.0->wandb->-r requirements.txt (line 7)) (4.0.2)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from cryptography->azure-storage->dpu_utils->-r requirements.txt (line 2)) (1.14.0)
+Requirement already satisfied: smmap<4,>=3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from gitdb<5,>=4.0.1->GitPython>=1.0.0->wandb->-r requirements.txt (line 7)) (3.0.1)
+Requirement already satisfied: pycparser in /network/home/jangeunb/.local/lib/python3.7/site-packages (from cffi!=1.11.3,>=1.8->cryptography->azure-storage->dpu_utils->-r requirements.txt (line 2)) (2.20)
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.32 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200420_043148-eu3fb3tf
+
+2020-04-20 00:31:49.464118: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-04-20 00:31:49.491865: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194880000 Hz
+2020-04-20 00:31:49.492500: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55d41589ba20 executing computations on platform Host. Devices:
+2020-04-20 00:31:49.492550: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Tokenizing and building vocabulary for code snippets and queries.  This step may take several hours.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+USING PARENT NODE CONNECTIONS
+Starting training run SelfAttentionModel-2020-04-20-00-31-48 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 450, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 300, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
