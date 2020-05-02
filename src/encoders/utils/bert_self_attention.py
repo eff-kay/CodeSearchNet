@@ -837,6 +837,8 @@ def transformer_model(input_tensor,
     raise ValueError("The width of the input tensor (%d) != hidden size (%d)" %
                      (input_width, hidden_size))
 
+
+
   # We keep the representation as a 2D tensor to avoid re-shaping it back and
   # forth from a 3D tensor to a 2D tensor. Re-shapes are normally free on
   # the GPU/CPU but may not be free on the TPU, so we want to minimize them to
@@ -845,6 +847,103 @@ def transformer_model(input_tensor,
   old_attention_head = num_attention_heads
 
   all_layer_outputs = []
+
+
+
+
+  #*****
+  if parent_tensor is not None:
+
+      print("*\tparent_tensor: ", parent_tensor)
+      for layer_idx in range(num_hidden_layers):
+        with tf.variable_scope("layer_%d" % layer_idx):
+          layer_input = prev_output
+          with tf.variable_scope("label_attention"):
+            label_attention_heads = []
+            num_attention_heads = old_attention_head
+            with tf.variable_scope('label_parent'):
+                attention_head_size = int(hidden_size / num_attention_heads)
+                parent_shape = get_shape_list(parent_tensor, expected_rank=3)
+                parent_input_width = parent_shape[2]
+
+                if parent_input_width != hidden_size:
+                    raise ValueError("The width of the input tensor (%d) != hidden size (%d)" %
+                                     (parent_input_width, hidden_size))
+
+                parent_reshaped_tensor = reshape_to_matrix(parent_tensor)
+
+                attention_head = attention_layer(
+                    from_tensor=layer_input,
+                    to_tensor=parent_reshaped_tensor,
+                    attention_mask=parent_attention_mask,
+                    num_attention_heads=num_attention_heads,
+                    size_per_head=attention_head_size,
+                    attention_probs_dropout_prob=attention_probs_dropout_prob,
+                    initializer_range=initializer_range,
+                    do_return_2d_tensor=True,
+                    batch_size=batch_size,
+                    from_seq_length=seq_length,
+                    to_seq_length=seq_length)
+
+                label_attention_heads.append(attention_head)
+                print("$$\t$$: ", num_attention_heads)
+                old_attention_head = num_attention_heads
+                #parent_tensor = None
+
+
+            print("\t", label_attention_heads)
+            print("\t\t", len(label_attention_heads))
+            attention_output = None
+            if len(label_attention_heads) == 1:
+              attention_output = label_attention_heads[0]
+            else:
+              # In the case where we have other sequences, we just concatenate
+              # them to the self-attention head before the projection.
+              attention_output = tf.concat(label_attention_heads, axis=-1)
+
+            # Run a linear projection of `hidden_size` then add a residual
+            # with `layer_input`.
+            with tf.variable_scope("label_output"):
+              attention_output = tf.layers.dense(
+                  attention_output,
+                  hidden_size,
+                  kernel_initializer=create_initializer(initializer_range))
+              attention_output = dropout(attention_output, hidden_dropout_prob)
+              attention_output = layer_norm(attention_output + layer_input)
+
+              all_layer_outputs.append(attention_output)
+
+          """
+          # The activation is only applied to the "intermediate" hidden layer.
+          with tf.variable_scope("label_intermediate"):
+            intermediate_output = tf.layers.dense(
+                attention_output,
+                intermediate_size,
+                activation=intermediate_act_fn,
+                kernel_initializer=create_initializer(initializer_range))
+    
+          # Down-project back to `hidden_size` then add the residual.
+          with tf.variable_scope("label_output"):
+            layer_output = tf.layers.dense(
+                intermediate_output,
+                hidden_size,
+                kernel_initializer=create_initializer(initializer_range))
+            layer_output = dropout(layer_output, hidden_dropout_prob)
+            layer_output = layer_norm(layer_output + attention_output)
+            prev_output = layer_output
+            all_layer_outputs.append(layer_output)
+    
+            """
+      label_attention_output = tf.add_n(all_layer_outputs)
+
+      prev_output = reshape_to_matrix(label_attention_output)
+  else:
+      label_attention_output = prev_output
+  old_attention_head = num_attention_heads
+
+  all_layer_outputs = []
+
+
   for layer_idx in range(num_hidden_layers):
     with tf.variable_scope("layer_%d" % layer_idx):
       layer_input = prev_output
@@ -865,7 +964,7 @@ def transformer_model(input_tensor,
                 parent_reshaped_tensor = reshape_to_matrix(parent_tensor)
 
                 attention_head = attention_layer(
-                    from_tensor=layer_input,
+                    from_tensor=label_attention_output,
                     to_tensor=parent_reshaped_tensor,
                     attention_mask=parent_attention_mask,
                     num_attention_heads=1,
@@ -884,8 +983,8 @@ def transformer_model(input_tensor,
 
         with tf.variable_scope("self"):
           attention_head = attention_layer(
-              from_tensor=layer_input,
-              to_tensor=layer_input,
+              from_tensor=label_attention_output,
+              to_tensor=label_attention_output,
               attention_mask=attention_mask,
               num_attention_heads=num_attention_heads,
               size_per_head=attention_head_size,

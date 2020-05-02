@@ -60,7 +60,7 @@ def run_train(model_class: Type[Model],
               max_files_per_dir: Optional[int] = None,
               parallelize: bool = True) -> RichPath:
     model = model_class(hyperparameters, run_name=run_name, model_save_dir=save_folder, log_save_dir=save_folder)
-    if os.path.exists(model.model_save_path):
+    if os.path.exists(model.model_save_path):        # {save_name}_model_best.pkl.gz
         model = model_restore_helper.restore(RichPath.create(model.model_save_path), is_train=True)
         model.train_log("Resuming training run %s of model %s with following hypers:\n%s" % (run_name,
                                                                                              model.__class__.__name__,
