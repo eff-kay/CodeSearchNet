@@ -1,15 +1,13 @@
 #!/bin/bash
+#SBATCH --account=def-jinguo
+#SBATCH --gres=gpu:2              # Number of GPUs (per node)
+#SBATCH --mem=16G               # memory (per node)
+#SBATCH --time=7-00:00            # time (DD-HH:MM)
+#SBATCH -o /home/jangeunb/projects/def-jinguo/jangeunb/CodeSearchNet/src/slurm-%j.out
 
 
-#SBATCH --partition=unkillable
-#SBATCH --cpus-per-task=16
-#SBATCH --gres=gpu:v100-32gb:2
-#SBATCH --mem=32G
-#SBATCH --time=96:00:00
-#SBATCH -o /network/home/jangeunb/CodeSearchNet/src/slurm-%j.out
+source ~/ENV/bin/activate
+module load cuda cudnn
 
-module load python/3.7
 
-pip install -r requirements.txt
-
-python train.py --model SelfAttentionModel
+python train.py --model SelfAttentionModel  --max-num-epochs 30
