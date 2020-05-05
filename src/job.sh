@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 #SBATCH --partition=long
 #SBATCH --gres=gpu:v100-32gb:1
 #SBATCH --mem=32G
@@ -23,4 +21,4 @@ exit_script() {
 trap exit_script SIGTERM
 
 
-python train.py --model SelfAttentionModel
+python train.py --model SelfAttentionModel  --max-num-epochs 30
