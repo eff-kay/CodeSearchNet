@@ -1,1 +1,1 @@
-../resources/data/python/final/jsonl/dfs_informed/valid
+../resources/data/python/final/dfs_informed/valid

@@ -953,6 +953,7 @@ def transformer_model(input_tensor,
       with tf.variable_scope("attention"):
         attention_heads = []
         num_attention_heads = old_attention_head
+        """
         if parent_tensor is not None:
             with tf.variable_scope('parent'):
                 attention_head_size = int(hidden_size / num_attention_heads)
@@ -982,7 +983,7 @@ def transformer_model(input_tensor,
                 old_attention_head = num_attention_heads
                 num_attention_heads = num_attention_heads-1
                 parent_tensor = None
-
+        """
         with tf.variable_scope("self"):
           attention_head = attention_layer(
               from_tensor=label_attention_output,

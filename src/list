@@ -1,0 +1,15 @@
+absl-py
+astor
+gast 
+grpcio 
+markdown 
+numpy 
+protobuf 
+setuptools 
+six 
+tensorboard 
+tensorflow 
+termcolor 
+werkzeug 
+wheel
+protobuf

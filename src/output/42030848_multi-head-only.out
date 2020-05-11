@@ -54,3 +54,5 @@ Validating on 23075 python samples.
 0 (train): Batch   399 (has 450 samples). Processed 179550 samples. Loss so far: 3.5900.  MRR so far: 0.3958 
 0 (train): Batch   499 (has 450 samples). Processed 224550 samples. Loss so far: 3.2608.  MRR so far: 0.4508 
 0 (train): Batch   599 (has 450 samples). Processed 269550 samples. Loss so far: 3.0071.  MRR so far: 0.4933 
+0 (train): Batch   699 (has 450 samples). Processed 314550 samples. Loss so far: 2.8038.  MRR so far: 0.5276 
+0 (train): Batch   799 (has 450 samples). Processed 359550 samples. Loss so far: 2.6337.  MRR so far: 0.5561 
