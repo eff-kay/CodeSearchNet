@@ -2,6 +2,13 @@
 Due to MODULEPATH changes, the following have been reloaded:
   1) openmpi/2.1.1
 
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) openmpi/2.1.1
+
+The following have been reloaded with a version change:
+  1) cuda/10.0.130 => cuda/8.0.44
+
 /home/jangeunb/tensorflow/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
   _np_qint8 = np.dtype([("qint8", np.int8, 1)])
 /home/jangeunb/tensorflow/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
@@ -17,13 +24,13 @@ Due to MODULEPATH changes, the following have been reloaded:
 wandb: W&B is a tool that helps track and visualize machine learning experiments
 wandb: No credentials found.  Run "wandb login" to visualize your metrics
 wandb: Tracking run with wandb version 0.8.31
-wandb: Wandb version 0.8.35 is available!  To upgrade, please run:
+wandb: Wandb version 0.8.36 is available!  To upgrade, please run:
 wandb:  $ pip install wandb --upgrade
-wandb: Run data is saved locally in wandb/run-20200510_084602-15uqipvd
+wandb: Run data is saved locally in wandb/run-20200512_213549-f0fiqyml
 
-2020-05-10 01:46:07.904592: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX512F
-2020-05-10 01:46:07.918257: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
-Tokenizing and building vocabulary for code snippets and queries.  This step may take several hours.
+	 ####  multi_head_only
+2020-05-12 14:35:51.775044: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX512F
+2020-05-12 14:35:51.777730: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
 WARNING:tensorflow:From /home/jangeunb/tensorflow/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Colocations handled automatically by placer.
@@ -41,45 +48,6 @@ Instructions for updating:
 Use tf.cast instead.
 USING PARENT NODE CONNECTIONS
 *	parent_tensor:  Tensor("code_encoder/python/self_attention_encoder/bert/encoder/dropout/mul:0", shape=(?, 200, 128), dtype=float32)
-Starting training run multi-head-only-2020-05-10-01-46-02 of model SelfAttentionModel with following hypers:
+Resuming training run multi_head_only of model SelfAttentionModel with following hypers:
 {'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 450, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
 Loading training and validation data.
-Begin Training.
-Training on 381880 python samples.
-Validating on 23075 python samples.
-==== Epoch 0 ====
-0 (train): Batch    99 (has 450 samples). Processed 44550 samples. Loss so far: 5.5139.  MRR so far: 0.0935 
-0 (train): Batch   199 (has 450 samples). Processed 89550 samples. Loss so far: 4.6319.  MRR so far: 0.2250 
-0 (train): Batch   299 (has 450 samples). Processed 134550 samples. Loss so far: 4.0168.  MRR so far: 0.3247 
-0 (train): Batch   399 (has 450 samples). Processed 179550 samples. Loss so far: 3.5900.  MRR so far: 0.3958 
-0 (train): Batch   499 (has 450 samples). Processed 224550 samples. Loss so far: 3.2608.  MRR so far: 0.4508 
-0 (train): Batch   599 (has 450 samples). Processed 269550 samples. Loss so far: 3.0071.  MRR so far: 0.4933 
-0 (train): Batch   699 (has 450 samples). Processed 314550 samples. Loss so far: 2.8038.  MRR so far: 0.5276 
-0 (train): Batch   799 (has 450 samples). Processed 359550 samples. Loss so far: 2.6337.  MRR so far: 0.5561 
-[K  Epoch 0 (train) took 60702.05s [processed 6 samples/second]
- Training Loss: 2.560978
-  Epoch 0 (valid) took 2182.85s [processed 10 samples/second]
- Validation:  Loss: 2.158664 | MRR: 0.650798
-  Best result so far -- saved model as '/project/6025349/jangeunb/CodeSearchNet/resources/saved_models/multi-head-only-2020-05-10-01-46-02_model_best.pkl.gz'.
-==== Epoch 1 ====
-1 (train): Batch    99 (has 450 samples). Processed 44550 samples. Loss so far: 1.0089.  MRR so far: 0.8281 
-1 (train): Batch   199 (has 450 samples). Processed 89550 samples. Loss so far: 1.0138.  MRR so far: 0.8275 
-1 (train): Batch   299 (has 450 samples). Processed 134550 samples. Loss so far: 1.0109.  MRR so far: 0.8281 
-1 (train): Batch   399 (has 450 samples). Processed 179550 samples. Loss so far: 1.0072.  MRR so far: 0.8287 
-1 (train): Batch   499 (has 450 samples). Processed 224550 samples. Loss so far: 1.0038.  MRR so far: 0.8295 
-1 (train): Batch   599 (has 450 samples). Processed 269550 samples. Loss so far: 0.9970.  MRR so far: 0.8309 
-1 (train): Batch   699 (has 450 samples). Processed 314550 samples. Loss so far: 0.9884.  MRR so far: 0.8323 
-1 (train): Batch   799 (has 450 samples). Processed 359550 samples. Loss so far: 0.9812.  MRR so far: 0.8336 
-[K  Epoch 1 (train) took 60713.22s [processed 6 samples/second]
- Training Loss: 0.977824
-  Epoch 1 (valid) took 2189.22s [processed 10 samples/second]
- Validation:  Loss: 1.852536 | MRR: 0.699312
-  Best result so far -- saved model as '/project/6025349/jangeunb/CodeSearchNet/resources/saved_models/multi-head-only-2020-05-10-01-46-02_model_best.pkl.gz'.
-==== Epoch 2 ====
-2 (train): Batch    99 (has 450 samples). Processed 44550 samples. Loss so far: 0.6163.  MRR so far: 0.8944 
-2 (train): Batch   199 (has 450 samples). Processed 89550 samples. Loss so far: 0.6227.  MRR so far: 0.8934 
-2 (train): Batch   299 (has 450 samples). Processed 134550 samples. Loss so far: 0.6337.  MRR so far: 0.8911 
-2 (train): Batch   399 (has 450 samples). Processed 179550 samples. Loss so far: 0.6400.  MRR so far: 0.8900 
-2 (train): Batch   499 (has 450 samples). Processed 224550 samples. Loss so far: 0.6469.  MRR so far: 0.8887 
-2 (train): Batch   599 (has 450 samples). Processed 269550 samples. Loss so far: 0.6509.  MRR so far: 0.8881 
-slurmstepd: error: *** JOB 42030848 ON cdr2656 CANCELLED AT 2020-05-12T01:45:31 DUE TO TIME LIMIT ***
