@@ -130,7 +130,11 @@ def run(arguments, tag_in_vcs=False) -> None:
 
     hyperparameters = model_class.get_default_hyperparameters()
     run_name = make_run_id(arguments)
-
+    date_idx = run_name.find('-')
+    run_name = run_name[:date_idx]
+    print("\t #### ", run_name)
+    
+    
     # make name of wandb run = run_id (Doesn't populate yet)
     hyperparameters['max_epochs'] = int(arguments.get('--max-num-epochs'))
 

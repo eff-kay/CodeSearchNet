@@ -754,8 +754,10 @@ class Model(ABC):
 
     @property
     def model_save_path(self) -> str:
-        return os.path.join(self.__model_save_dir,
+        this = os.path.join(self.__model_save_dir,
                             f'{self.run_name}_model_best.pkl.gz')
+        print(this)
+        return this
 
     def train(self,
               train_data: LoadedSamples,

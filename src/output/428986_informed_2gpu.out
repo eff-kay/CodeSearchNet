@@ -1,0 +1,366 @@
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: absl-py==0.9.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: appnope==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: astor==0.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.8.1)
+Requirement already satisfied: asttokens==2.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.0.3)
+Requirement already satisfied: attrs==19.3.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (1.1.25)
+Requirement already satisfied: azure-nspkg==3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (3.0.2)
+Requirement already satisfied: azure-storage==0.36.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (0.36.0)
+Requirement already satisfied: backcall==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.1.0)
+Requirement already satisfied: certifi==2019.11.28 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 12)) (3.0.4)
+Requirement already satisfied: click==7.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 13)) (7.1.1)
+Requirement already satisfied: configparser==5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 14)) (5.0.0)
+Requirement already satisfied: cryptography==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 15)) (2.9)
+Requirement already satisfied: decorator==4.4.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 16)) (4.4.2)
+Requirement already satisfied: docker-pycreds==0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 17)) (0.4.0)
+Requirement already satisfied: docopt==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 18)) (0.6.2)
+Requirement already satisfied: dpu-utils==0.2.11 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 19)) (0.2.11)
+Requirement already satisfied: gast==0.3.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 20)) (0.3.3)
+Requirement already satisfied: gitdb==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 21)) (4.0.2)
+Requirement already satisfied: GitPython==3.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 22)) (3.1.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 23)) (0.2.0)
+Requirement already satisfied: graphql-core==1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 24)) (1.1)
+Collecting grpcio==1.25.0
+  Using cached grpcio-1.25.0-cp37-cp37m-manylinux2010_x86_64.whl (2.4 MB)
+Requirement already satisfied: h5py==2.10.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 27)) (2.10.0)
+Requirement already satisfied: idna==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 28)) (2.9)
+Requirement already satisfied: importlib-metadata==1.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 29)) (1.6.0)
+Requirement already satisfied: ipdb==0.13.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 30)) (0.13.2)
+Requirement already satisfied: ipython==7.13.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 31)) (7.13.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 32)) (0.2.0)
+Requirement already satisfied: jedi==0.16.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 33)) (0.16.0)
+Requirement already satisfied: Keras-Applications==1.0.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 34)) (1.0.8)
+Requirement already satisfied: Keras-Preprocessing==1.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 35)) (1.1.0)
+Requirement already satisfied: Markdown==3.2.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 36)) (3.2.1)
+Requirement already satisfied: mock==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 37)) (4.0.2)
+Requirement already satisfied: more-itertools==8.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 38)) (8.2.0)
+Requirement already satisfied: mypy==0.770 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 39)) (0.770)
+Requirement already satisfied: mypy-extensions==0.4.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 40)) (0.4.3)
+Collecting numpy==1.18.1
+  Using cached numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Requirement already satisfied: nvidia-ml-py3==7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 42)) (7.352.0)
+Requirement already satisfied: packaging==20.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 43)) (20.3)
+Requirement already satisfied: pandas==1.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 44)) (1.0.3)
+Requirement already satisfied: parso==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: pathtools==0.1.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 46)) (0.1.2)
+Requirement already satisfied: pexpect==4.8.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 47)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 48)) (0.7.5)
+Requirement already satisfied: pluggy==0.13.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 49)) (0.13.1)
+Requirement already satisfied: promise==2.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 50)) (2.3)
+Requirement already satisfied: prompt-toolkit==3.0.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 51)) (3.0.5)
+Requirement already satisfied: protobuf==3.11.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 52)) (3.11.3)
+Requirement already satisfied: psutil==5.7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 53)) (5.7.0)
+Requirement already satisfied: ptyprocess==0.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 54)) (0.6.0)
+Requirement already satisfied: py==1.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 55)) (1.8.1)
+Requirement already satisfied: pycparser==2.20 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 56)) (2.20)
+Requirement already satisfied: Pygments==2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 57)) (2.6.1)
+Requirement already satisfied: pyparsing==2.4.6 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 58)) (2.4.6)
+Requirement already satisfied: pytest==5.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 59)) (5.4.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 60)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 61)) (2019.3)
+Requirement already satisfied: PyYAML==5.3.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 62)) (5.3.1)
+Requirement already satisfied: requests==2.23.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 63)) (2.23.0)
+Requirement already satisfied: scipy==1.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 64)) (1.4.1)
+Requirement already satisfied: sentencepiece in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 65)) (0.1.85)
+Requirement already satisfied: sentry-sdk==0.14.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 66)) (0.14.3)
+Requirement already satisfied: SetSimilaritySearch==0.1.7 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 67)) (0.1.7)
+Requirement already satisfied: shortuuid==1.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 68)) (1.0.1)
+Requirement already satisfied: six==1.14.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from -r requirements.txt (line 69)) (1.14.0)
+Requirement already satisfied: smmap==3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 70)) (3.0.1)
+Requirement already satisfied: subprocess32==3.5.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 71)) (3.5.4)
+ERROR: Could not find a version that satisfies the requirement tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72)) (from versions: 1.15.0rc0, 1.15.0rc1, 1.15.0rc2, 1.15.0rc3, 1.15.0, 2.1.0rc0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.2.0rc0, 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0)
+ERROR: No matching distribution found for tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72))
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/cvmfs/ai.mila.quebec/apps/x86_64/debian//python/3.7/bin/python3.7 -m pip install --upgrade pip' command.
+[=== Module cuda/10.0 loaded ===]
+[=== Module cuda/10.0/cudnn/7.5 loaded ===]
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.35 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200511_140032-23ykuxnm
+
+2020-05-11 10:00:34.005427: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-11 10:00:34.039872: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194880000 Hz
+2020-05-11 10:00:34.040178: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x557b3bb2c820 executing computations on platform Host. Devices:
+2020-05-11 10:00:34.040214: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+Tokenizing and building vocabulary for code snippets and queries.  This step may take several hours.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+USING PARENT NODE CONNECTIONS
+Starting training run informed_2gpu-2020-05-11-10-00-32 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
+Begin Training.
+Training on 29998 python samples.
+Validating on 23075 python samples.
+==== Epoch 0 ====
+  Epoch 0 (train) took 1975.42s [processed 14 samples/second]
+ Training Loss: 6.696074
+  Epoch 0 (valid) took 640.35s [processed 35 samples/second]
+ Validation:  Loss: 6.776239 | MRR: 0.019598
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 1 ====
+  Epoch 1 (train) took 2124.11s [processed 13 samples/second]
+ Training Loss: 5.653419
+  Epoch 1 (valid) took 669.23s [processed 34 samples/second]
+ Validation:  Loss: 6.486008 | MRR: 0.044943
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 2 ====
+  Epoch 2 (train) took 2144.03s [processed 13 samples/second]
+ Training Loss: 4.290194
+  Epoch 2 (valid) took 683.20s [processed 33 samples/second]
+ Validation:  Loss: 6.141137 | MRR: 0.100748
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 3 ====
+  Epoch 3 (train) took 2128.67s [processed 13 samples/second]
+ Training Loss: 2.764865
+  Epoch 3 (valid) took 663.16s [processed 34 samples/second]
+ Validation:  Loss: 5.881132 | MRR: 0.158897
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 4 ====
+  Epoch 4 (train) took 2136.09s [processed 13 samples/second]
+ Training Loss: 1.687358
+  Epoch 4 (valid) took 678.86s [processed 33 samples/second]
+ Validation:  Loss: 5.758178 | MRR: 0.191591
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 5 ====
+  Epoch 5 (train) took 2170.60s [processed 13 samples/second]
+ Training Loss: 1.042283
+  Epoch 5 (valid) took 680.58s [processed 33 samples/second]
+ Validation:  Loss: 5.918962 | MRR: 0.211568
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 6 ====
+  Epoch 6 (train) took 2118.89s [processed 13 samples/second]
+ Training Loss: 0.670518
+  Epoch 6 (valid) took 645.00s [processed 35 samples/second]
+ Validation:  Loss: 6.104282 | MRR: 0.222059
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 7 ====
+  Epoch 7 (train) took 2029.26s [processed 14 samples/second]
+ Training Loss: 0.467535
+  Epoch 7 (valid) took 628.41s [processed 36 samples/second]
+ Validation:  Loss: 6.151554 | MRR: 0.226535
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 8 ====
+  Epoch 8 (train) took 2004.22s [processed 14 samples/second]
+ Training Loss: 0.362387
+  Epoch 8 (valid) took 616.70s [processed 37 samples/second]
+ Validation:  Loss: 6.225585 | MRR: 0.235309
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 9 ====
+  Epoch 9 (train) took 1931.64s [processed 15 samples/second]
+ Training Loss: 0.310496
+  Epoch 9 (valid) took 615.57s [processed 37 samples/second]
+ Validation:  Loss: 6.192241 | MRR: 0.233902
+==== Epoch 10 ====
+  Epoch 10 (train) took 1961.66s [processed 14 samples/second]
+ Training Loss: 0.268509
+  Epoch 10 (valid) took 611.10s [processed 37 samples/second]
+ Validation:  Loss: 6.320659 | MRR: 0.241984
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 11 ====
+  Epoch 11 (train) took 2002.38s [processed 14 samples/second]
+ Training Loss: 0.236835
+  Epoch 11 (valid) took 629.37s [processed 36 samples/second]
+ Validation:  Loss: 6.166407 | MRR: 0.243438
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 12 ====
+  Epoch 12 (train) took 1967.45s [processed 14 samples/second]
+ Training Loss: 0.213537
+  Epoch 12 (valid) took 628.96s [processed 36 samples/second]
+ Validation:  Loss: 6.272851 | MRR: 0.241796
+==== Epoch 13 ====
+  Epoch 13 (train) took 2004.35s [processed 14 samples/second]
+ Training Loss: 0.207107
+  Epoch 13 (valid) took 626.69s [processed 36 samples/second]
+ Validation:  Loss: 6.311866 | MRR: 0.247193
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 14 ====
+  Epoch 14 (train) took 1990.84s [processed 14 samples/second]
+ Training Loss: 0.197088
+  Epoch 14 (valid) took 617.74s [processed 37 samples/second]
+ Validation:  Loss: 6.209401 | MRR: 0.246654
+==== Epoch 15 ====
+  Epoch 15 (train) took 1965.39s [processed 14 samples/second]
+ Training Loss: 0.175916
+  Epoch 15 (valid) took 632.73s [processed 36 samples/second]
+ Validation:  Loss: 6.564729 | MRR: 0.242770
+==== Epoch 16 ====
+  Epoch 16 (train) took 1994.56s [processed 14 samples/second]
+ Training Loss: 0.174469
+  Epoch 16 (valid) took 627.25s [processed 36 samples/second]
+ Validation:  Loss: 6.072592 | MRR: 0.249294
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 17 ====
+  Epoch 17 (train) took 2034.10s [processed 14 samples/second]
+ Training Loss: 0.155935
+  Epoch 17 (valid) took 678.99s [processed 33 samples/second]
+ Validation:  Loss: 6.387801 | MRR: 0.253655
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 18 ====
+  Epoch 18 (train) took 2045.14s [processed 14 samples/second]
+ Training Loss: 0.155803
+  Epoch 18 (valid) took 628.13s [processed 36 samples/second]
+ Validation:  Loss: 6.143283 | MRR: 0.249233
+==== Epoch 19 ====
+  Epoch 19 (train) took 2010.65s [processed 14 samples/second]
+ Training Loss: 0.152540
+  Epoch 19 (valid) took 643.11s [processed 35 samples/second]
+ Validation:  Loss: 6.368559 | MRR: 0.249472
+==== Epoch 20 ====
+  Epoch 20 (train) took 2267.35s [processed 12 samples/second]
+ Training Loss: 0.146148
+  Epoch 20 (valid) took 707.37s [processed 32 samples/second]
+ Validation:  Loss: 6.321736 | MRR: 0.248887
+==== Epoch 21 ====
+  Epoch 21 (train) took 2349.24s [processed 12 samples/second]
+ Training Loss: 0.139776
+  Epoch 21 (valid) took 652.31s [processed 35 samples/second]
+ Validation:  Loss: 6.302821 | MRR: 0.251089
+==== Epoch 22 ====
+  Epoch 22 (train) took 2063.97s [processed 14 samples/second]
+ Training Loss: 0.138640
+  Epoch 22 (valid) took 647.33s [processed 35 samples/second]
+ Validation:  Loss: 6.292645 | MRR: 0.255403
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 23 ====
+  Epoch 23 (train) took 2054.95s [processed 14 samples/second]
+ Training Loss: 0.132593
+  Epoch 23 (valid) took 646.28s [processed 35 samples/second]
+ Validation:  Loss: 6.469218 | MRR: 0.252308
+==== Epoch 24 ====
+  Epoch 24 (train) took 2009.11s [processed 14 samples/second]
+ Training Loss: 0.135254
+  Epoch 24 (valid) took 635.42s [processed 36 samples/second]
+ Validation:  Loss: 6.530693 | MRR: 0.252976
+==== Epoch 25 ====
+  Epoch 25 (train) took 2014.13s [processed 14 samples/second]
+ Training Loss: 0.116839
+  Epoch 25 (valid) took 634.89s [processed 36 samples/second]
+ Validation:  Loss: 6.388018 | MRR: 0.252987
+==== Epoch 26 ====
+  Epoch 26 (train) took 2145.09s [processed 13 samples/second]
+ Training Loss: 0.115352
+  Epoch 26 (valid) took 762.42s [processed 30 samples/second]
+ Validation:  Loss: 6.340199 | MRR: 0.255535
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 27 ====
+  Epoch 27 (train) took 2361.29s [processed 12 samples/second]
+ Training Loss: 0.119611
+  Epoch 27 (valid) took 658.40s [processed 34 samples/second]
+ Validation:  Loss: 6.248921 | MRR: 0.257734
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+==== Epoch 28 ====
+  Epoch 28 (train) took 2048.27s [processed 14 samples/second]
+ Training Loss: 0.113072
+  Epoch 28 (valid) took 652.27s [processed 35 samples/second]
+ Validation:  Loss: 6.320688 | MRR: 0.256209
+==== Epoch 29 ====
+  Epoch 29 (train) took 2097.15s [processed 13 samples/second]
+ Training Loss: 0.115086
+  Epoch 29 (valid) took 674.80s [processed 34 samples/second]
+ Validation:  Loss: 6.435047 | MRR: 0.257933
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_2gpu-2020-05-11-10-00-32_model_best.pkl.gz'.
+USING PARENT NODE CONNECTIONS
+
+wandb: Waiting for W&B process to finish, PID 50297
+Traceback (most recent call last):
+  File "train.py", line 191, in <module>
+    run_and_debug(lambda: run(args), args['--debug'])
+  File "/network/home/jangeunb/.local/lib/python3.7/site-packages/dpu_utils/utils/debughelper.py", line 21, in run_and_debug
+    func()
+  File "train.py", line 191, in <lambda>
+    run_and_debug(lambda: run(args), args['--debug'])
+  File "train.py", line 186, in run
+    compute_evaluation_metrics(model_path, arguments, azure_info_path, valid_data_dirs, test_data_dirs)
+  File "/network/home/jangeunb/CodeSearchNet/src/model_test.py", line 245, in compute_evaluation_metrics
+    mrr = tester.evaluate(test_data, f'Test-{language_name}', filter_language=language_name if filter_language else None)
+  File "/network/home/jangeunb/CodeSearchNet/src/model_test.py", line 112, in evaluate
+    code_representations = self.__model.get_code_representations(batch_data)
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 949, in get_code_representations
+    representation_type=RepresentationType.CODE)
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 893, in __compute_representations_batched
+    for minibatch_counter, (batch_data_dict, samples_in_batch, samples_used_so_far, batch_original_tensorised_data_ids) in enumerate(data_generator):
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 687, in __split_data_into_minibatches
+    is_train=is_train
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 556, in __extend_minibatch_by_sample
+    batch_data['per_language_code_data'][language], sample, is_train=is_train, query_type=query_type)
+  File "/network/home/jangeunb/CodeSearchNet/src/encoders/seq_encoder.py", line 203, in extend_minibatch_by_sample
+    current_sample['parent_tokens'] = sample[f'{self.label}_parent_tokens_{query_type}']
+KeyError: 'code_parent_tokens_docstring_as_query'
+wandb: Program failed with code 1. Press ctrl-c to abort syncing.
+wandb: You can sync this run to the cloud by running: 
+wandb: wandb sync wandb/run-20200511_140032-23ykuxnm
+Start Time: Mon May 11 10:00:26 EDT 2020
+End Time: Tue May 12 08:44:51 EDT 2020
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Tue May 12 08:44:51 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 2
+GPU 00000000:86:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+GPU 00000000:8A:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+Tue May 12 08:44:51 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+| N/A   34C    P0    42W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+| N/A   29C    P0    40W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+

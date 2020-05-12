@@ -101,3 +101,239 @@ wandb: Run data is saved locally in wandb/run-20200511_043114-1wfksh1p
 2020-05-11 00:31:15.769419: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55c775b8bd00 executing computations on platform Host. Devices:
 2020-05-11 00:31:15.769438: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
 Tokenizing and building vocabulary for code snippets and queries.  This step may take several hours.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+USING PARENT NODE CONNECTIONS
+Starting training run informed-2020-05-11-00-31-14 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
+Begin Training.
+Training on 29998 python samples.
+Validating on 23075 python samples.
+==== Epoch 0 ====
+  Epoch 0 (train) took 1954.35s [processed 14 samples/second]
+ Training Loss: 6.696596
+  Epoch 0 (valid) took 608.16s [processed 37 samples/second]
+ Validation:  Loss: 6.768984 | MRR: 0.019734
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 1 ====
+  Epoch 1 (train) took 1937.26s [processed 14 samples/second]
+ Training Loss: 5.654025
+  Epoch 1 (valid) took 606.23s [processed 37 samples/second]
+ Validation:  Loss: 6.489777 | MRR: 0.044765
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 2 ====
+  Epoch 2 (train) took 1939.18s [processed 14 samples/second]
+ Training Loss: 4.321183
+  Epoch 2 (valid) took 591.98s [processed 38 samples/second]
+ Validation:  Loss: 6.146089 | MRR: 0.099467
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 3 ====
+  Epoch 3 (train) took 1957.64s [processed 14 samples/second]
+ Training Loss: 2.783046
+  Epoch 3 (valid) took 628.36s [processed 36 samples/second]
+ Validation:  Loss: 5.891284 | MRR: 0.157954
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 4 ====
+  Epoch 4 (train) took 2008.32s [processed 14 samples/second]
+ Training Loss: 1.691974
+  Epoch 4 (valid) took 629.63s [processed 36 samples/second]
+ Validation:  Loss: 5.771079 | MRR: 0.191304
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 5 ====
+  Epoch 5 (train) took 2010.14s [processed 14 samples/second]
+ Training Loss: 1.043839
+  Epoch 5 (valid) took 629.37s [processed 36 samples/second]
+ Validation:  Loss: 5.936583 | MRR: 0.210613
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 6 ====
+  Epoch 6 (train) took 2012.34s [processed 14 samples/second]
+ Training Loss: 0.672319
+  Epoch 6 (valid) took 629.18s [processed 36 samples/second]
+ Validation:  Loss: 6.126628 | MRR: 0.221362
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 7 ====
+  Epoch 7 (train) took 2014.36s [processed 14 samples/second]
+ Training Loss: 0.467559
+  Epoch 7 (valid) took 630.31s [processed 36 samples/second]
+ Validation:  Loss: 6.165413 | MRR: 0.226141
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 8 ====
+  Epoch 8 (train) took 2057.82s [processed 14 samples/second]
+ Training Loss: 0.361219
+  Epoch 8 (valid) took 659.19s [processed 34 samples/second]
+ Validation:  Loss: 6.219043 | MRR: 0.236195
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 9 ====
+  Epoch 9 (train) took 2158.93s [processed 13 samples/second]
+ Training Loss: 0.309052
+  Epoch 9 (valid) took 678.58s [processed 33 samples/second]
+ Validation:  Loss: 6.177269 | MRR: 0.233849
+==== Epoch 10 ====
+  Epoch 10 (train) took 2160.27s [processed 13 samples/second]
+ Training Loss: 0.268946
+  Epoch 10 (valid) took 675.06s [processed 34 samples/second]
+ Validation:  Loss: 6.277310 | MRR: 0.242014
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 11 ====
+  Epoch 11 (train) took 2130.03s [processed 13 samples/second]
+ Training Loss: 0.238207
+  Epoch 11 (valid) took 660.23s [processed 34 samples/second]
+ Validation:  Loss: 6.197061 | MRR: 0.241183
+==== Epoch 12 ====
+  Epoch 12 (train) took 2161.69s [processed 13 samples/second]
+ Training Loss: 0.212511
+  Epoch 12 (valid) took 703.95s [processed 32 samples/second]
+ Validation:  Loss: 6.272416 | MRR: 0.242324
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 13 ====
+  Epoch 13 (train) took 2232.23s [processed 12 samples/second]
+ Training Loss: 0.205975
+  Epoch 13 (valid) took 714.57s [processed 32 samples/second]
+ Validation:  Loss: 6.318540 | MRR: 0.245516
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 14 ====
+  Epoch 14 (train) took 2185.32s [processed 13 samples/second]
+ Training Loss: 0.196684
+  Epoch 14 (valid) took 674.74s [processed 34 samples/second]
+ Validation:  Loss: 6.259183 | MRR: 0.247262
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 15 ====
+  Epoch 15 (train) took 2106.33s [processed 13 samples/second]
+ Training Loss: 0.174749
+  Epoch 15 (valid) took 645.04s [processed 35 samples/second]
+ Validation:  Loss: 6.475316 | MRR: 0.244748
+==== Epoch 16 ====
+  Epoch 16 (train) took 2054.85s [processed 14 samples/second]
+ Training Loss: 0.175056
+  Epoch 16 (valid) took 630.53s [processed 36 samples/second]
+ Validation:  Loss: 6.110966 | MRR: 0.247515
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 17 ====
+  Epoch 17 (train) took 2071.63s [processed 13 samples/second]
+ Training Loss: 0.153306
+  Epoch 17 (valid) took 665.18s [processed 34 samples/second]
+ Validation:  Loss: 6.377584 | MRR: 0.253444
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 18 ====
+  Epoch 18 (train) took 2115.07s [processed 13 samples/second]
+ Training Loss: 0.156158
+  Epoch 18 (valid) took 667.62s [processed 34 samples/second]
+ Validation:  Loss: 6.214543 | MRR: 0.248300
+==== Epoch 19 ====
+  Epoch 19 (train) took 2113.86s [processed 13 samples/second]
+ Training Loss: 0.150310
+  Epoch 19 (valid) took 650.33s [processed 35 samples/second]
+ Validation:  Loss: 6.224621 | MRR: 0.252702
+==== Epoch 20 ====
+  Epoch 20 (train) took 2116.67s [processed 13 samples/second]
+ Training Loss: 0.146662
+  Epoch 20 (valid) took 668.05s [processed 34 samples/second]
+ Validation:  Loss: 6.211325 | MRR: 0.253877
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed-2020-05-11-00-31-14_model_best.pkl.gz'.
+==== Epoch 21 ====
+  Epoch 21 (train) took 2070.02s [processed 14 samples/second]
+ Training Loss: 0.143176
+  Epoch 21 (valid) took 681.18s [processed 33 samples/second]
+ Validation:  Loss: 6.206579 | MRR: 0.252460
+==== Epoch 22 ====
+  Epoch 22 (train) took 2102.07s [processed 13 samples/second]
+ Training Loss: 0.136064
+  Epoch 22 (valid) took 685.14s [processed 33 samples/second]
+ Validation:  Loss: 6.405869 | MRR: 0.251910
+==== Epoch 23 ====
+  Epoch 23 (train) took 2171.39s [processed 13 samples/second]
+ Training Loss: 0.130001
+  Epoch 23 (valid) took 671.52s [processed 34 samples/second]
+ Validation:  Loss: 6.365356 | MRR: 0.253204
+==== Epoch 24 ====
+  Epoch 24 (train) took 2131.84s [processed 13 samples/second]
+ Training Loss: 0.135159
+  Epoch 24 (valid) took 699.64s [processed 32 samples/second]
+ Validation:  Loss: 6.558475 | MRR: 0.251239
+==== Epoch 25 ====
+  Epoch 25 (train) took 2114.80s [processed 13 samples/second]
+ Training Loss: 0.116345
+  Epoch 25 (valid) took 643.95s [processed 35 samples/second]
+ Validation:  Loss: 6.321303 | MRR: 0.253109
+USING PARENT NODE CONNECTIONS
+Traceback (most recent call last):
+  File "train.py", line 191, in <module>
+    run_and_debug(lambda: run(args), args['--debug'])
+  File "/network/home/jangeunb/.local/lib/python3.7/site-packages/dpu_utils/utils/debughelper.py", line 21, in run_and_debug
+    func()
+  File "train.py", line 191, in <lambda>
+    run_and_debug(lambda: run(args), args['--debug'])
+  File "train.py", line 186, in run
+    compute_evaluation_metrics(model_path, arguments, azure_info_path, valid_data_dirs, test_data_dirs)
+  File "/network/home/jangeunb/CodeSearchNet/src/model_test.py", line 245, in compute_evaluation_metrics
+    mrr = tester.evaluate(test_data, f'Test-{language_name}', filter_language=language_name if filter_language else None)
+  File "/network/home/jangeunb/CodeSearchNet/src/model_test.py", line 112, in evaluate
+    code_representations = self.__model.get_code_representations(batch_data)
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 949, in get_code_representations
+    representation_type=RepresentationType.CODE)
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 893, in __compute_representations_batched
+    for minibatch_counter, (batch_data_dict, samples_in_batch, samples_used_so_far, batch_original_tensorised_data_ids) in enumerate(data_generator):
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 687, in __split_data_into_minibatches
+    is_train=is_train
+  File "/network/home/jangeunb/CodeSearchNet/src/models/model.py", line 556, in __extend_minibatch_by_sample
+    batch_data['per_language_code_data'][language], sample, is_train=is_train, query_type=query_type)
+  File "/network/home/jangeunb/CodeSearchNet/src/encoders/seq_encoder.py", line 203, in extend_minibatch_by_sample
+    current_sample['parent_tokens'] = sample[f'{self.label}_parent_tokens_{query_type}']
+KeyError: 'code_parent_tokens_docstring_as_query'
+
+wandb: Waiting for W&B process to finish, PID 29582
+wandb: Program failed with code 1. Press ctrl-c to abort syncing.
+wandb: You can sync this run to the cloud by running: 
+wandb: wandb sync wandb/run-20200511_043114-1wfksh1p
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Mon May 11 20:19:47 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 1
+GPU 00000000:07:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes
+        Process ID                  : 37126
+            GPU Utilization         : 42 %
+            Memory Utilization      : 15 %
+            Max memory usage        : 7265 MiB
+            Time                    : 1028580 ms
+            Is Running              : 0
+
+Mon May 11 20:19:47 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+| N/A   30C    P0    41W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
