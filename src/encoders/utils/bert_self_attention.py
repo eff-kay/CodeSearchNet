@@ -912,10 +912,10 @@ def transformer_model(input_tensor,
               attention_output = dropout(attention_output, hidden_dropout_prob)
               attention_output = layer_norm(attention_output + layer_input)
 
-              #all_layer_outputs.append(attention_output)
+              all_layer_outputs.append(attention_output)
 
-    ###
-
+    
+          """
           # The activation is only applied to the "intermediate" hidden layer.
           with tf.variable_scope("label_intermediate"):
             intermediate_output = tf.layers.dense(
@@ -934,11 +934,10 @@ def transformer_model(input_tensor,
             layer_output = layer_norm(layer_output + attention_output)
             prev_output = layer_output
             all_layer_outputs.append(layer_output)
-
+          """
 
       label_attention_output = tf.add_n(all_layer_outputs)
-
-      prev_output = reshape_to_matrix(label_attention_output)
+      label_attention_output = reshape_to_matrix(label_attention_output)
   else:
       label_attention_output = prev_output
   old_attention_head = num_attention_heads
