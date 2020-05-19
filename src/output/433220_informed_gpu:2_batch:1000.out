@@ -1,0 +1,1269 @@
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: absl-py==0.9.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: appnope==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: astor==0.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.8.1)
+Requirement already satisfied: asttokens==2.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.0.3)
+Requirement already satisfied: attrs==19.3.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (1.1.25)
+Requirement already satisfied: azure-nspkg==3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (3.0.2)
+Requirement already satisfied: azure-storage==0.36.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (0.36.0)
+Requirement already satisfied: backcall==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.1.0)
+Requirement already satisfied: certifi==2019.11.28 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 12)) (3.0.4)
+Requirement already satisfied: click==7.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 13)) (7.1.1)
+Requirement already satisfied: configparser==5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 14)) (5.0.0)
+Requirement already satisfied: cryptography==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 15)) (2.9)
+Requirement already satisfied: decorator==4.4.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 16)) (4.4.2)
+Requirement already satisfied: docker-pycreds==0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 17)) (0.4.0)
+Requirement already satisfied: docopt==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 18)) (0.6.2)
+Requirement already satisfied: dpu-utils==0.2.11 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 19)) (0.2.11)
+Requirement already satisfied: gast==0.3.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 20)) (0.3.3)
+Requirement already satisfied: gitdb==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 21)) (4.0.2)
+Requirement already satisfied: GitPython==3.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 22)) (3.1.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 23)) (0.2.0)
+Requirement already satisfied: graphql-core==1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 24)) (1.1)
+Collecting grpcio==1.25.0
+  Using cached grpcio-1.25.0-cp37-cp37m-manylinux2010_x86_64.whl (2.4 MB)
+Requirement already satisfied: h5py==2.10.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 27)) (2.10.0)
+Requirement already satisfied: idna==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 28)) (2.9)
+Requirement already satisfied: importlib-metadata==1.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 29)) (1.6.0)
+Requirement already satisfied: ipdb==0.13.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 30)) (0.13.2)
+Requirement already satisfied: ipython==7.13.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 31)) (7.13.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 32)) (0.2.0)
+Requirement already satisfied: jedi==0.16.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 33)) (0.16.0)
+Requirement already satisfied: Keras-Applications==1.0.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 34)) (1.0.8)
+Requirement already satisfied: Keras-Preprocessing==1.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 35)) (1.1.0)
+Requirement already satisfied: Markdown==3.2.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 36)) (3.2.1)
+Requirement already satisfied: mock==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 37)) (4.0.2)
+Requirement already satisfied: more-itertools==8.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 38)) (8.2.0)
+Requirement already satisfied: mypy==0.770 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 39)) (0.770)
+Requirement already satisfied: mypy-extensions==0.4.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 40)) (0.4.3)
+Collecting numpy==1.18.1
+  Using cached numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Requirement already satisfied: nvidia-ml-py3==7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 42)) (7.352.0)
+Requirement already satisfied: packaging==20.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 43)) (20.3)
+Requirement already satisfied: pandas==1.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 44)) (1.0.3)
+Requirement already satisfied: parso==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: pathtools==0.1.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 46)) (0.1.2)
+Requirement already satisfied: pexpect==4.8.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 47)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 48)) (0.7.5)
+Requirement already satisfied: pluggy==0.13.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 49)) (0.13.1)
+Requirement already satisfied: promise==2.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 50)) (2.3)
+Requirement already satisfied: prompt-toolkit==3.0.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 51)) (3.0.5)
+Requirement already satisfied: protobuf==3.11.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 52)) (3.11.3)
+Requirement already satisfied: psutil==5.7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 53)) (5.7.0)
+Requirement already satisfied: ptyprocess==0.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 54)) (0.6.0)
+Requirement already satisfied: py==1.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 55)) (1.8.1)
+Requirement already satisfied: pycparser==2.20 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 56)) (2.20)
+Requirement already satisfied: Pygments==2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 57)) (2.6.1)
+Requirement already satisfied: pyparsing==2.4.6 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 58)) (2.4.6)
+Requirement already satisfied: pytest==5.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 59)) (5.4.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 60)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 61)) (2019.3)
+Requirement already satisfied: PyYAML==5.3.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 62)) (5.3.1)
+Requirement already satisfied: requests==2.23.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 63)) (2.23.0)
+Requirement already satisfied: scipy==1.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 64)) (1.4.1)
+Requirement already satisfied: sentencepiece in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 65)) (0.1.85)
+Requirement already satisfied: sentry-sdk==0.14.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 66)) (0.14.3)
+Requirement already satisfied: SetSimilaritySearch==0.1.7 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 67)) (0.1.7)
+Requirement already satisfied: shortuuid==1.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 68)) (1.0.1)
+Requirement already satisfied: six==1.14.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from -r requirements.txt (line 69)) (1.14.0)
+Requirement already satisfied: smmap==3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 70)) (3.0.1)
+Requirement already satisfied: subprocess32==3.5.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 71)) (3.5.4)
+ERROR: Could not find a version that satisfies the requirement tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72)) (from versions: 1.15.0rc0, 1.15.0rc1, 1.15.0rc2, 1.15.0rc3, 1.15.0, 2.1.0rc0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.1.1, 2.2.0rc0, 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0)
+ERROR: No matching distribution found for tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72))
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/cvmfs/ai.mila.quebec/apps/x86_64/debian//python/3.7/bin/python3.7 -m pip install --upgrade pip' command.
+[=== Module cuda/10.0 loaded ===]
+[=== Module cuda/10.0/cudnn/7.5 loaded ===]
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.36 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200518_170309-3q0fteg8
+
+	 ####  informed_gpu:2_batch:1000
+2020-05-18 13:03:13.481733: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-18 13:03:13.491182: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194880000 Hz
+2020-05-18 13:03:13.491476: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55700708e320 executing computations on platform Host. Devices:
+2020-05-18 13:03:13.491496: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+USING PARENT NODE CONNECTIONS
+Resuming training run informed_gpu:2_batch:1000 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
+slurmstepd: error: *** JOB 433220 ON mila02 CANCELLED AT 2020-05-18T14:17:52 DUE TO PREEMPTION ***
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Mon May 18 14:18:21 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 2
+GPU 00000000:06:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes
+        Process ID                  : 68757
+            GPU Utilization         : 11 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 901 ms
+            Is Running              : 0
+        Process ID                  : 69518
+            GPU Utilization         : 11 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 915 ms
+            Is Running              : 0
+        Process ID                  : 70053
+            GPU Utilization         : 13 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 1038 ms
+            Is Running              : 0
+        Process ID                  : 70681
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 910 ms
+            Is Running              : 0
+        Process ID                  : 71233
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 901 ms
+            Is Running              : 0
+        Process ID                  : 71815
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 810 ms
+            Is Running              : 0
+        Process ID                  : 72399
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 837 ms
+            Is Running              : 0
+        Process ID                  : 73107
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 863 ms
+            Is Running              : 0
+        Process ID                  : 73702
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 856 ms
+            Is Running              : 0
+        Process ID                  : 74212
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 822 ms
+            Is Running              : 0
+        Process ID                  : 74715
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 811 ms
+            Is Running              : 0
+        Process ID                  : 75275
+            GPU Utilization         : 9 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 835 ms
+            Is Running              : 0
+        Process ID                  : 75873
+            GPU Utilization         : 13 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 811 ms
+            Is Running              : 0
+        Process ID                  : 76471
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 840 ms
+            Is Running              : 0
+        Process ID                  : 77116
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 854 ms
+            Is Running              : 0
+        Process ID                  : 78075
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 848 ms
+            Is Running              : 0
+        Process ID                  : 78617
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 827 ms
+            Is Running              : 0
+        Process ID                  : 79129
+            GPU Utilization         : 10 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 826 ms
+            Is Running              : 0
+        Process ID                  : 79629
+            GPU Utilization         : 8 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 842 ms
+            Is Running              : 0
+        Process ID                  : 80166
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 835 ms
+            Is Running              : 0
+        Process ID                  : 80678
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 861 ms
+            Is Running              : 0
+        Process ID                  : 81696
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 884 ms
+            Is Running              : 0
+        Process ID                  : 749
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 843 ms
+            Is Running              : 0
+        Process ID                  : 1290
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 800 ms
+            Is Running              : 0
+        Process ID                  : 1814
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 860 ms
+            Is Running              : 0
+
+GPU 00000000:0A:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+Mon May 18 14:18:22 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+| N/A   31C    P0    41W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: absl-py==0.9.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: appnope==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: astor==0.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.8.1)
+Requirement already satisfied: asttokens==2.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.0.3)
+Requirement already satisfied: attrs==19.3.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (1.1.25)
+Requirement already satisfied: azure-nspkg==3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (3.0.2)
+Requirement already satisfied: azure-storage==0.36.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (0.36.0)
+Requirement already satisfied: backcall==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.1.0)
+Requirement already satisfied: certifi==2019.11.28 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 12)) (3.0.4)
+Requirement already satisfied: click==7.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 13)) (7.1.1)
+Requirement already satisfied: configparser==5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 14)) (5.0.0)
+Requirement already satisfied: cryptography==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 15)) (2.9)
+Requirement already satisfied: decorator==4.4.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 16)) (4.4.2)
+Requirement already satisfied: docker-pycreds==0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 17)) (0.4.0)
+Requirement already satisfied: docopt==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 18)) (0.6.2)
+Requirement already satisfied: dpu-utils==0.2.11 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 19)) (0.2.11)
+Requirement already satisfied: gast==0.3.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 20)) (0.3.3)
+Requirement already satisfied: gitdb==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 21)) (4.0.2)
+Requirement already satisfied: GitPython==3.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 22)) (3.1.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 23)) (0.2.0)
+Requirement already satisfied: graphql-core==1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 24)) (1.1)
+Collecting grpcio==1.25.0
+  Using cached grpcio-1.25.0-cp37-cp37m-manylinux2010_x86_64.whl (2.4 MB)
+Requirement already satisfied: h5py==2.10.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 27)) (2.10.0)
+Requirement already satisfied: idna==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 28)) (2.9)
+Requirement already satisfied: importlib-metadata==1.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 29)) (1.6.0)
+Requirement already satisfied: ipdb==0.13.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 30)) (0.13.2)
+Requirement already satisfied: ipython==7.13.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 31)) (7.13.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 32)) (0.2.0)
+Requirement already satisfied: jedi==0.16.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 33)) (0.16.0)
+Requirement already satisfied: Keras-Applications==1.0.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 34)) (1.0.8)
+Requirement already satisfied: Keras-Preprocessing==1.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 35)) (1.1.0)
+Requirement already satisfied: Markdown==3.2.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 36)) (3.2.1)
+Requirement already satisfied: mock==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 37)) (4.0.2)
+Requirement already satisfied: more-itertools==8.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 38)) (8.2.0)
+Requirement already satisfied: mypy==0.770 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 39)) (0.770)
+Requirement already satisfied: mypy-extensions==0.4.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 40)) (0.4.3)
+Collecting numpy==1.18.1
+  Using cached numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Requirement already satisfied: nvidia-ml-py3==7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 42)) (7.352.0)
+Requirement already satisfied: packaging==20.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 43)) (20.3)
+Requirement already satisfied: pandas==1.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 44)) (1.0.3)
+Requirement already satisfied: parso==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: pathtools==0.1.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 46)) (0.1.2)
+Requirement already satisfied: pexpect==4.8.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 47)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 48)) (0.7.5)
+Requirement already satisfied: pluggy==0.13.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 49)) (0.13.1)
+Requirement already satisfied: promise==2.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 50)) (2.3)
+Requirement already satisfied: prompt-toolkit==3.0.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 51)) (3.0.5)
+Requirement already satisfied: protobuf==3.11.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 52)) (3.11.3)
+Requirement already satisfied: psutil==5.7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 53)) (5.7.0)
+Requirement already satisfied: ptyprocess==0.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 54)) (0.6.0)
+Requirement already satisfied: py==1.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 55)) (1.8.1)
+Requirement already satisfied: pycparser==2.20 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 56)) (2.20)
+Requirement already satisfied: Pygments==2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 57)) (2.6.1)
+Requirement already satisfied: pyparsing==2.4.6 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 58)) (2.4.6)
+Requirement already satisfied: pytest==5.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 59)) (5.4.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 60)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 61)) (2019.3)
+Requirement already satisfied: PyYAML==5.3.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 62)) (5.3.1)
+Requirement already satisfied: requests==2.23.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 63)) (2.23.0)
+Requirement already satisfied: scipy==1.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 64)) (1.4.1)
+Requirement already satisfied: sentencepiece in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 65)) (0.1.85)
+Requirement already satisfied: sentry-sdk==0.14.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 66)) (0.14.3)
+Requirement already satisfied: SetSimilaritySearch==0.1.7 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 67)) (0.1.7)
+Requirement already satisfied: shortuuid==1.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 68)) (1.0.1)
+Requirement already satisfied: six==1.14.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from -r requirements.txt (line 69)) (1.14.0)
+Requirement already satisfied: smmap==3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 70)) (3.0.1)
+Requirement already satisfied: subprocess32==3.5.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 71)) (3.5.4)
+ERROR: Could not find a version that satisfies the requirement tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72)) (from versions: 1.15.0rc0, 1.15.0rc1, 1.15.0rc2, 1.15.0rc3, 1.15.0, 2.1.0rc0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.1.1, 2.2.0rc0, 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0)
+ERROR: No matching distribution found for tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72))
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/cvmfs/ai.mila.quebec/apps/x86_64/debian//python/3.7/bin/python3.7 -m pip install --upgrade pip' command.
+[=== Module cuda/10.0 loaded ===]
+[=== Module cuda/10.0/cudnn/7.5 loaded ===]
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.36 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200518_182119-3kv9u36w
+
+	 ####  informed_gpu:2_batch:1000
+2020-05-18 14:21:20.565725: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-18 14:21:20.591618: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194990000 Hz
+2020-05-18 14:21:20.591836: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x562e0ae3de50 executing computations on platform Host. Devices:
+2020-05-18 14:21:20.591870: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+USING PARENT NODE CONNECTIONS
+Resuming training run informed_gpu:2_batch:1000 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: absl-py==0.9.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: appnope==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: astor==0.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.8.1)
+Requirement already satisfied: asttokens==2.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.0.3)
+Requirement already satisfied: attrs==19.3.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (1.1.25)
+Requirement already satisfied: azure-nspkg==3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (3.0.2)
+Requirement already satisfied: azure-storage==0.36.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (0.36.0)
+Requirement already satisfied: backcall==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.1.0)
+Requirement already satisfied: certifi==2019.11.28 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 12)) (3.0.4)
+Requirement already satisfied: click==7.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 13)) (7.1.1)
+Requirement already satisfied: configparser==5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 14)) (5.0.0)
+Requirement already satisfied: cryptography==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 15)) (2.9)
+Requirement already satisfied: decorator==4.4.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 16)) (4.4.2)
+Requirement already satisfied: docker-pycreds==0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 17)) (0.4.0)
+Requirement already satisfied: docopt==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 18)) (0.6.2)
+Requirement already satisfied: dpu-utils==0.2.11 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 19)) (0.2.11)
+Requirement already satisfied: gast==0.3.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 20)) (0.3.3)
+Requirement already satisfied: gitdb==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 21)) (4.0.2)
+Requirement already satisfied: GitPython==3.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 22)) (3.1.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 23)) (0.2.0)
+Requirement already satisfied: graphql-core==1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 24)) (1.1)
+Collecting grpcio==1.25.0
+  Using cached grpcio-1.25.0-cp37-cp37m-manylinux2010_x86_64.whl (2.4 MB)
+Requirement already satisfied: h5py==2.10.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 27)) (2.10.0)
+Requirement already satisfied: idna==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 28)) (2.9)
+Requirement already satisfied: importlib-metadata==1.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 29)) (1.6.0)
+Requirement already satisfied: ipdb==0.13.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 30)) (0.13.2)
+Requirement already satisfied: ipython==7.13.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 31)) (7.13.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 32)) (0.2.0)
+Requirement already satisfied: jedi==0.16.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 33)) (0.16.0)
+Requirement already satisfied: Keras-Applications==1.0.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 34)) (1.0.8)
+Requirement already satisfied: Keras-Preprocessing==1.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 35)) (1.1.0)
+Requirement already satisfied: Markdown==3.2.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 36)) (3.2.1)
+Requirement already satisfied: mock==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 37)) (4.0.2)
+Requirement already satisfied: more-itertools==8.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 38)) (8.2.0)
+Requirement already satisfied: mypy==0.770 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 39)) (0.770)
+Requirement already satisfied: mypy-extensions==0.4.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 40)) (0.4.3)
+Collecting numpy==1.18.1
+  Using cached numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Requirement already satisfied: nvidia-ml-py3==7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 42)) (7.352.0)
+Requirement already satisfied: packaging==20.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 43)) (20.3)
+Requirement already satisfied: pandas==1.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 44)) (1.0.3)
+Requirement already satisfied: parso==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: pathtools==0.1.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 46)) (0.1.2)
+Requirement already satisfied: pexpect==4.8.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 47)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 48)) (0.7.5)
+Requirement already satisfied: pluggy==0.13.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 49)) (0.13.1)
+Requirement already satisfied: promise==2.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 50)) (2.3)
+Requirement already satisfied: prompt-toolkit==3.0.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 51)) (3.0.5)
+Requirement already satisfied: protobuf==3.11.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 52)) (3.11.3)
+Requirement already satisfied: psutil==5.7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 53)) (5.7.0)
+Requirement already satisfied: ptyprocess==0.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 54)) (0.6.0)
+Requirement already satisfied: py==1.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 55)) (1.8.1)
+Requirement already satisfied: pycparser==2.20 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 56)) (2.20)
+Requirement already satisfied: Pygments==2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 57)) (2.6.1)
+Requirement already satisfied: pyparsing==2.4.6 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 58)) (2.4.6)
+Requirement already satisfied: pytest==5.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 59)) (5.4.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 60)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 61)) (2019.3)
+Requirement already satisfied: PyYAML==5.3.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 62)) (5.3.1)
+Requirement already satisfied: requests==2.23.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 63)) (2.23.0)
+Requirement already satisfied: scipy==1.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 64)) (1.4.1)
+Requirement already satisfied: sentencepiece in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 65)) (0.1.85)
+Requirement already satisfied: sentry-sdk==0.14.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 66)) (0.14.3)
+Requirement already satisfied: SetSimilaritySearch==0.1.7 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 67)) (0.1.7)
+Requirement already satisfied: shortuuid==1.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 68)) (1.0.1)
+Requirement already satisfied: six==1.14.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from -r requirements.txt (line 69)) (1.14.0)
+Requirement already satisfied: smmap==3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 70)) (3.0.1)
+Requirement already satisfied: subprocess32==3.5.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 71)) (3.5.4)
+ERROR: Could not find a version that satisfies the requirement tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72)) (from versions: 1.15.0rc0, 1.15.0rc1, 1.15.0rc2, 1.15.0rc3, 1.15.0, 2.1.0rc0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.1.1, 2.2.0rc0, 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0)
+ERROR: No matching distribution found for tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72))
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/cvmfs/ai.mila.quebec/apps/x86_64/debian//python/3.7/bin/python3.7 -m pip install --upgrade pip' command.
+[=== Module cuda/10.0 loaded ===]
+[=== Module cuda/10.0/cudnn/7.5 loaded ===]
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.36 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200518_184512-14xczogz
+
+	 ####  informed_gpu:2_batch:1000
+2020-05-18 14:45:13.370001: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-18 14:45:13.399906: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194880000 Hz
+2020-05-18 14:45:13.400269: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5576c18bf320 executing computations on platform Host. Devices:
+2020-05-18 14:45:13.400289: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+USING PARENT NODE CONNECTIONS
+Resuming training run informed_gpu:2_batch:1000 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
+slurmstepd: error: acct_gather_profile/influxdb _send_data: curl_easy_perform failed to send data (discarded). Reason: Couldn't resolve host name
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Mon May 18 14:58:02 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 2
+GPU 00000000:0B:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+GPU 00000000:85:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+Mon May 18 14:58:03 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+| N/A   32C    P0    42W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+slurmstepd: error: *** JOB 433220 ON mila02 CANCELLED AT 2020-05-18T16:31:18 DUE TO PREEMPTION ***
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Mon May 18 16:31:48 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 2
+GPU 00000000:06:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes
+        Process ID                  : 41820
+            GPU Utilization         : 12 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 824 ms
+            Is Running              : 0
+        Process ID                  : 42391
+            GPU Utilization         : 2 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 870 ms
+            Is Running              : 0
+        Process ID                  : 43099
+            GPU Utilization         : 1 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 839 ms
+            Is Running              : 0
+        Process ID                  : 43577
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 780 ms
+            Is Running              : 0
+        Process ID                  : 44074
+            GPU Utilization         : 12 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 782 ms
+            Is Running              : 0
+        Process ID                  : 44585
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 753 ms
+            Is Running              : 0
+        Process ID                  : 45086
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 763 ms
+            Is Running              : 0
+        Process ID                  : 45583
+            GPU Utilization         : 1 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 763 ms
+            Is Running              : 0
+        Process ID                  : 46058
+            GPU Utilization         : 10 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 746 ms
+            Is Running              : 0
+        Process ID                  : 46543
+            GPU Utilization         : 12 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 764 ms
+            Is Running              : 0
+        Process ID                  : 47125
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 781 ms
+            Is Running              : 0
+        Process ID                  : 47684
+            GPU Utilization         : 1 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 770 ms
+            Is Running              : 0
+        Process ID                  : 48218
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 761 ms
+            Is Running              : 0
+        Process ID                  : 48939
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 747 ms
+            Is Running              : 0
+
+GPU 00000000:8A:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+Mon May 18 16:31:48 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+| N/A   31C    P0    40W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: absl-py==0.9.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: appnope==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: astor==0.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.8.1)
+Requirement already satisfied: asttokens==2.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.0.3)
+Requirement already satisfied: attrs==19.3.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (1.1.25)
+Requirement already satisfied: azure-nspkg==3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (3.0.2)
+Requirement already satisfied: azure-storage==0.36.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (0.36.0)
+Requirement already satisfied: backcall==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.1.0)
+Requirement already satisfied: certifi==2019.11.28 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 12)) (3.0.4)
+Requirement already satisfied: click==7.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 13)) (7.1.1)
+Requirement already satisfied: configparser==5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 14)) (5.0.0)
+Requirement already satisfied: cryptography==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 15)) (2.9)
+Requirement already satisfied: decorator==4.4.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 16)) (4.4.2)
+Requirement already satisfied: docker-pycreds==0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 17)) (0.4.0)
+Requirement already satisfied: docopt==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 18)) (0.6.2)
+Requirement already satisfied: dpu-utils==0.2.11 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 19)) (0.2.11)
+Requirement already satisfied: gast==0.3.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 20)) (0.3.3)
+Requirement already satisfied: gitdb==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 21)) (4.0.2)
+Requirement already satisfied: GitPython==3.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 22)) (3.1.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 23)) (0.2.0)
+Requirement already satisfied: graphql-core==1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 24)) (1.1)
+Collecting grpcio==1.25.0
+  Using cached grpcio-1.25.0-cp37-cp37m-manylinux2010_x86_64.whl (2.4 MB)
+Requirement already satisfied: h5py==2.10.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 27)) (2.10.0)
+Requirement already satisfied: idna==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 28)) (2.9)
+Requirement already satisfied: importlib-metadata==1.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 29)) (1.6.0)
+Requirement already satisfied: ipdb==0.13.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 30)) (0.13.2)
+Requirement already satisfied: ipython==7.13.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 31)) (7.13.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 32)) (0.2.0)
+Requirement already satisfied: jedi==0.16.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 33)) (0.16.0)
+Requirement already satisfied: Keras-Applications==1.0.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 34)) (1.0.8)
+Requirement already satisfied: Keras-Preprocessing==1.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 35)) (1.1.0)
+Requirement already satisfied: Markdown==3.2.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 36)) (3.2.1)
+Requirement already satisfied: mock==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 37)) (4.0.2)
+Requirement already satisfied: more-itertools==8.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 38)) (8.2.0)
+Requirement already satisfied: mypy==0.770 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 39)) (0.770)
+Requirement already satisfied: mypy-extensions==0.4.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 40)) (0.4.3)
+Collecting numpy==1.18.1
+  Using cached numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Requirement already satisfied: nvidia-ml-py3==7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 42)) (7.352.0)
+Requirement already satisfied: packaging==20.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 43)) (20.3)
+Requirement already satisfied: pandas==1.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 44)) (1.0.3)
+Requirement already satisfied: parso==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: pathtools==0.1.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 46)) (0.1.2)
+Requirement already satisfied: pexpect==4.8.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 47)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 48)) (0.7.5)
+Requirement already satisfied: pluggy==0.13.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 49)) (0.13.1)
+Requirement already satisfied: promise==2.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 50)) (2.3)
+Requirement already satisfied: prompt-toolkit==3.0.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 51)) (3.0.5)
+Requirement already satisfied: protobuf==3.11.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 52)) (3.11.3)
+Requirement already satisfied: psutil==5.7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 53)) (5.7.0)
+Requirement already satisfied: ptyprocess==0.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 54)) (0.6.0)
+Requirement already satisfied: py==1.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 55)) (1.8.1)
+Requirement already satisfied: pycparser==2.20 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 56)) (2.20)
+Requirement already satisfied: Pygments==2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 57)) (2.6.1)
+Requirement already satisfied: pyparsing==2.4.6 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 58)) (2.4.6)
+Requirement already satisfied: pytest==5.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 59)) (5.4.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 60)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 61)) (2019.3)
+Requirement already satisfied: PyYAML==5.3.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 62)) (5.3.1)
+Requirement already satisfied: requests==2.23.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 63)) (2.23.0)
+Requirement already satisfied: scipy==1.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 64)) (1.4.1)
+Requirement already satisfied: sentencepiece in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 65)) (0.1.85)
+Requirement already satisfied: sentry-sdk==0.14.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 66)) (0.14.3)
+Requirement already satisfied: SetSimilaritySearch==0.1.7 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 67)) (0.1.7)
+Requirement already satisfied: shortuuid==1.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 68)) (1.0.1)
+Requirement already satisfied: six==1.14.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from -r requirements.txt (line 69)) (1.14.0)
+Requirement already satisfied: smmap==3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 70)) (3.0.1)
+Requirement already satisfied: subprocess32==3.5.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 71)) (3.5.4)
+ERROR: Could not find a version that satisfies the requirement tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72)) (from versions: 1.15.0rc0, 1.15.0rc1, 1.15.0rc2, 1.15.0rc3, 1.15.0, 2.1.0rc0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.1.1, 2.2.0rc0, 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0)
+ERROR: No matching distribution found for tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72))
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/cvmfs/ai.mila.quebec/apps/x86_64/debian//python/3.7/bin/python3.7 -m pip install --upgrade pip' command.
+[=== Module cuda/10.0 loaded ===]
+[=== Module cuda/10.0/cudnn/7.5 loaded ===]
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.36 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200518_204620-2cr3j0ux
+
+	 ####  informed_gpu:2_batch:1000
+2020-05-18 16:46:21.876642: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-18 16:46:21.907875: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194880000 Hz
+2020-05-18 16:46:21.908135: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55db19cdf320 executing computations on platform Host. Devices:
+2020-05-18 16:46:21.908156: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+USING PARENT NODE CONNECTIONS
+Resuming training run informed_gpu:2_batch:1000 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.
+slurmstepd: error: *** JOB 433220 ON mila02 CANCELLED AT 2020-05-18T18:08:26 DUE TO PREEMPTION ***
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Mon May 18 18:08:55 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 2
+GPU 00000000:06:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes
+        Process ID                  : 54561
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 958 ms
+            Is Running              : 0
+        Process ID                  : 55051
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 925 ms
+            Is Running              : 0
+        Process ID                  : 55599
+            GPU Utilization         : 11 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 840 ms
+            Is Running              : 0
+        Process ID                  : 56115
+            GPU Utilization         : 13 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 837 ms
+            Is Running              : 0
+        Process ID                  : 56660
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 825 ms
+            Is Running              : 0
+        Process ID                  : 57187
+            GPU Utilization         : 11 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 846 ms
+            Is Running              : 0
+        Process ID                  : 57825
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 833 ms
+            Is Running              : 0
+        Process ID                  : 58938
+            GPU Utilization         : 2 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 821 ms
+            Is Running              : 0
+        Process ID                  : 59493
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 834 ms
+            Is Running              : 0
+        Process ID                  : 60061
+            GPU Utilization         : 1 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 823 ms
+            Is Running              : 0
+        Process ID                  : 60809
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 884 ms
+            Is Running              : 0
+        Process ID                  : 61446
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 839 ms
+            Is Running              : 0
+        Process ID                  : 61975
+            GPU Utilization         : 9 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 877 ms
+            Is Running              : 0
+        Process ID                  : 62496
+            GPU Utilization         : 12 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 919 ms
+            Is Running              : 0
+        Process ID                  : 62996
+            GPU Utilization         : 2 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 909 ms
+            Is Running              : 0
+        Process ID                  : 63515
+            GPU Utilization         : 2 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 816 ms
+            Is Running              : 0
+        Process ID                  : 64539
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 967 ms
+            Is Running              : 0
+        Process ID                  : 65047
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 882 ms
+            Is Running              : 0
+        Process ID                  : 65752
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 869 ms
+            Is Running              : 0
+        Process ID                  : 66268
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 817 ms
+            Is Running              : 0
+        Process ID                  : 66975
+            GPU Utilization         : 12 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 874 ms
+            Is Running              : 0
+        Process ID                  : 68617
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 738 ms
+            Is Running              : 0
+        Process ID                  : 69989
+            GPU Utilization         : 10 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 866 ms
+            Is Running              : 0
+        Process ID                  : 71163
+            GPU Utilization         : 4 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 862 ms
+            Is Running              : 0
+        Process ID                  : 71717
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 838 ms
+            Is Running              : 0
+        Process ID                  : 72517
+            GPU Utilization         : 1 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 950 ms
+            Is Running              : 0
+        Process ID                  : 73196
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 906 ms
+            Is Running              : 0
+        Process ID                  : 73806
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 835 ms
+            Is Running              : 0
+        Process ID                  : 74598
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 922 ms
+            Is Running              : 0
+        Process ID                  : 75464
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 869 ms
+            Is Running              : 0
+        Process ID                  : 76426
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 839 ms
+            Is Running              : 0
+        Process ID                  : 77454
+            GPU Utilization         : 13 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 859 ms
+            Is Running              : 0
+        Process ID                  : 78142
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 882 ms
+            Is Running              : 0
+        Process ID                  : 79083
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 873 ms
+            Is Running              : 0
+        Process ID                  : 79770
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 826 ms
+            Is Running              : 0
+        Process ID                  : 80308
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 845 ms
+            Is Running              : 0
+        Process ID                  : 80800
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 853 ms
+            Is Running              : 0
+        Process ID                  : 81758
+            GPU Utilization         : 0 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 849 ms
+            Is Running              : 0
+        Process ID                  : 1218
+            GPU Utilization         : 12 %
+            Memory Utilization      : 1 %
+            Max memory usage        : 305 MiB
+            Time                    : 871 ms
+            Is Running              : 0
+        Process ID                  : 1708
+            GPU Utilization         : 1 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 815 ms
+            Is Running              : 0
+        Process ID                  : 2483
+            GPU Utilization         : 5 %
+            Memory Utilization      : 0 %
+            Max memory usage        : 305 MiB
+            Time                    : 878 ms
+            Is Running              : 0
+
+GPU 00000000:8A:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+Mon May 18 18:08:55 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   30C    P0    43W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+| N/A   31C    P0    40W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+[=== Module python/3.7 loaded ===]
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: absl-py==0.9.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 1)) (0.9.0)
+Requirement already satisfied: appnope==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 2)) (0.1.0)
+Requirement already satisfied: astor==0.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 3)) (0.8.1)
+Requirement already satisfied: asttokens==2.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 4)) (2.0.3)
+Requirement already satisfied: attrs==19.3.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 5)) (19.3.0)
+Requirement already satisfied: azure-common==1.1.25 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 6)) (1.1.25)
+Requirement already satisfied: azure-nspkg==3.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 7)) (3.0.2)
+Requirement already satisfied: azure-storage==0.36.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 8)) (0.36.0)
+Requirement already satisfied: backcall==0.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 9)) (0.1.0)
+Requirement already satisfied: certifi==2019.11.28 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 10)) (2019.11.28)
+Requirement already satisfied: cffi==1.14.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 11)) (1.14.0)
+Requirement already satisfied: chardet==3.0.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 12)) (3.0.4)
+Requirement already satisfied: click==7.1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 13)) (7.1.1)
+Requirement already satisfied: configparser==5.0.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 14)) (5.0.0)
+Requirement already satisfied: cryptography==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 15)) (2.9)
+Requirement already satisfied: decorator==4.4.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 16)) (4.4.2)
+Requirement already satisfied: docker-pycreds==0.4.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 17)) (0.4.0)
+Requirement already satisfied: docopt==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 18)) (0.6.2)
+Requirement already satisfied: dpu-utils==0.2.11 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 19)) (0.2.11)
+Requirement already satisfied: gast==0.3.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 20)) (0.3.3)
+Requirement already satisfied: gitdb==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 21)) (4.0.2)
+Requirement already satisfied: GitPython==3.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 22)) (3.1.0)
+Requirement already satisfied: gql==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 23)) (0.2.0)
+Requirement already satisfied: graphql-core==1.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 24)) (1.1)
+Collecting grpcio==1.25.0
+  Using cached grpcio-1.25.0-cp37-cp37m-manylinux2010_x86_64.whl (2.4 MB)
+Requirement already satisfied: h5py==2.10.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 27)) (2.10.0)
+Requirement already satisfied: idna==2.9 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 28)) (2.9)
+Requirement already satisfied: importlib-metadata==1.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 29)) (1.6.0)
+Requirement already satisfied: ipdb==0.13.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 30)) (0.13.2)
+Requirement already satisfied: ipython==7.13.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 31)) (7.13.0)
+Requirement already satisfied: ipython-genutils==0.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 32)) (0.2.0)
+Requirement already satisfied: jedi==0.16.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 33)) (0.16.0)
+Requirement already satisfied: Keras-Applications==1.0.8 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 34)) (1.0.8)
+Requirement already satisfied: Keras-Preprocessing==1.1.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 35)) (1.1.0)
+Requirement already satisfied: Markdown==3.2.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 36)) (3.2.1)
+Requirement already satisfied: mock==4.0.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 37)) (4.0.2)
+Requirement already satisfied: more-itertools==8.2.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 38)) (8.2.0)
+Requirement already satisfied: mypy==0.770 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 39)) (0.770)
+Requirement already satisfied: mypy-extensions==0.4.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 40)) (0.4.3)
+Collecting numpy==1.18.1
+  Using cached numpy-1.18.1-cp37-cp37m-manylinux1_x86_64.whl (20.1 MB)
+Requirement already satisfied: nvidia-ml-py3==7.352.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 42)) (7.352.0)
+Requirement already satisfied: packaging==20.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 43)) (20.3)
+Requirement already satisfied: pandas==1.0.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 44)) (1.0.3)
+Requirement already satisfied: parso==0.6.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 45)) (0.6.2)
+Requirement already satisfied: pathtools==0.1.2 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 46)) (0.1.2)
+Requirement already satisfied: pexpect==4.8.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 47)) (4.8.0)
+Requirement already satisfied: pickleshare==0.7.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 48)) (0.7.5)
+Requirement already satisfied: pluggy==0.13.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 49)) (0.13.1)
+Requirement already satisfied: promise==2.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 50)) (2.3)
+Requirement already satisfied: prompt-toolkit==3.0.5 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 51)) (3.0.5)
+Requirement already satisfied: protobuf==3.11.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 52)) (3.11.3)
+Requirement already satisfied: psutil==5.7.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 53)) (5.7.0)
+Requirement already satisfied: ptyprocess==0.6.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 54)) (0.6.0)
+Requirement already satisfied: py==1.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 55)) (1.8.1)
+Requirement already satisfied: pycparser==2.20 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 56)) (2.20)
+Requirement already satisfied: Pygments==2.6.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 57)) (2.6.1)
+Requirement already satisfied: pyparsing==2.4.6 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 58)) (2.4.6)
+Requirement already satisfied: pytest==5.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 59)) (5.4.1)
+Requirement already satisfied: python-dateutil==2.8.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 60)) (2.8.1)
+Requirement already satisfied: pytz==2019.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 61)) (2019.3)
+Requirement already satisfied: PyYAML==5.3.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 62)) (5.3.1)
+Requirement already satisfied: requests==2.23.0 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 63)) (2.23.0)
+Requirement already satisfied: scipy==1.4.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 64)) (1.4.1)
+Requirement already satisfied: sentencepiece in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 65)) (0.1.85)
+Requirement already satisfied: sentry-sdk==0.14.3 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 66)) (0.14.3)
+Requirement already satisfied: SetSimilaritySearch==0.1.7 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 67)) (0.1.7)
+Requirement already satisfied: shortuuid==1.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 68)) (1.0.1)
+Requirement already satisfied: six==1.14.0 in /cvmfs/ai.mila.quebec/apps/x86_64/debian/python/3.7/lib/python3.7/site-packages (from -r requirements.txt (line 69)) (1.14.0)
+Requirement already satisfied: smmap==3.0.1 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 70)) (3.0.1)
+Requirement already satisfied: subprocess32==3.5.4 in /network/home/jangeunb/.local/lib/python3.7/site-packages (from -r requirements.txt (line 71)) (3.5.4)
+ERROR: Could not find a version that satisfies the requirement tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72)) (from versions: 1.15.0rc0, 1.15.0rc1, 1.15.0rc2, 1.15.0rc3, 1.15.0, 2.1.0rc0, 2.1.0rc1, 2.1.0rc2, 2.1.0, 2.1.1, 2.2.0rc0, 2.2.0rc1, 2.2.0rc2, 2.2.0rc3, 2.2.0rc4, 2.2.0)
+ERROR: No matching distribution found for tensorflow_cpu==1.13.1 (from -r requirements.txt (line 72))
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/cvmfs/ai.mila.quebec/apps/x86_64/debian//python/3.7/bin/python3.7 -m pip install --upgrade pip' command.
+[=== Module cuda/10.0 loaded ===]
+[=== Module cuda/10.0/cudnn/7.5 loaded ===]
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+wandb: W&B is a tool that helps track and visualize machine learning experiments
+wandb: No credentials found.  Run "wandb login" to visualize your metrics
+wandb: Tracking run with wandb version 0.8.31
+wandb: Wandb version 0.8.36 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Run data is saved locally in wandb/run-20200519_040549-mwh0vtaw
+
+	 ####  informed_gpu:2_batch:1000
+2020-05-19 00:05:50.551767: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-05-19 00:05:50.583908: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2194880000 Hz
+2020-05-19 00:05:50.584215: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x557e3dd0c5a0 executing computations on platform Host. Devices:
+2020-05-19 00:05:50.584236: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:370: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/encoders/utils/bert_self_attention.py:690: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+WARNING:tensorflow:From /network/home/jangeunb/CodeSearchNet/src/models/model.py:362: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /network/home/jangeunb/.local/lib/python3.7/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+USING PARENT NODE CONNECTIONS
+Resuming training run informed_gpu:2_batch:1000 of model SelfAttentionModel with following hypers:
+{'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
+Loading training and validation data.

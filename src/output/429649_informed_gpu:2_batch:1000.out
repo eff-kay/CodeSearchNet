@@ -122,3 +122,102 @@ USING PARENT NODE CONNECTIONS
 Starting training run informed_gpu:2_batch:1000 of model SelfAttentionModel with following hypers:
 {'code_token_vocab_size': 10000, 'code_token_vocab_count_threshold': 10, 'code_token_embedding_size': 128, 'code_use_subtokens': False, 'code_mark_subtoken_end': False, 'code_max_num_tokens': 200, 'code_use_bpe': True, 'code_pct_bpe': 0.5, 'code_self_attention_activation': 'gelu', 'code_self_attention_hidden_size': 128, 'code_self_attention_intermediate_size': 512, 'code_self_attention_num_layers': 3, 'code_self_attention_num_heads': 8, 'code_self_attention_pool_mode': 'weighted_mean', 'query_token_vocab_size': 10000, 'query_token_vocab_count_threshold': 10, 'query_token_embedding_size': 128, 'query_use_subtokens': False, 'query_mark_subtoken_end': False, 'query_max_num_tokens': 30, 'query_use_bpe': True, 'query_pct_bpe': 0.5, 'query_self_attention_activation': 'gelu', 'query_self_attention_hidden_size': 128, 'query_self_attention_intermediate_size': 512, 'query_self_attention_num_layers': 3, 'query_self_attention_num_heads': 8, 'query_self_attention_pool_mode': 'weighted_mean', 'batch_size': 1000, 'optimizer': 'Adam', 'seed': 0, 'dropout_keep_rate': 0.9, 'learning_rate': 0.0005, 'learning_rate_code_scale_factor': 1.0, 'learning_rate_query_scale_factor': 1.0, 'learning_rate_decay': 0.98, 'momentum': 0.85, 'gradient_clip': 1, 'loss': 'softmax', 'margin': 1, 'max_epochs': 30, 'patience': 5, 'fraction_using_func_name': 0.1, 'min_len_func_name_for_query': 12, 'query_random_token_frequency': 0.0, 'use_parent': True}
 Loading training and validation data.
+Begin Training.
+/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz
+Training on 411878 python samples.
+Validating on 23075 python samples.
+==== Epoch 0 ====
+0 (train): Batch    99 (has 1000 samples). Processed 99000 samples. Loss so far: 6.0962.  MRR so far: 0.0812 
+0 (train): Batch   199 (has 1000 samples). Processed 199000 samples. Loss so far: 4.9261.  MRR so far: 0.2360 
+0 (train): Batch   299 (has 1000 samples). Processed 299000 samples. Loss so far: 4.1606.  MRR so far: 0.3477 
+0 (train): Batch   399 (has 1000 samples). Processed 399000 samples. Loss so far: 3.6571.  MRR so far: 0.4230 
+[K  Epoch 0 (train) took 30649.41s [processed 13 samples/second]
+ Training Loss: 3.607434
+  Epoch 0 (valid) took 658.35s [processed 34 samples/second]
+ Validation:  Loss: 2.775709 | MRR: 0.565465
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz'.
+==== Epoch 1 ====
+1 (train): Batch    99 (has 1000 samples). Processed 99000 samples. Loss so far: 1.5478.  MRR so far: 0.7450 
+1 (train): Batch   199 (has 1000 samples). Processed 199000 samples. Loss so far: 1.5012.  MRR so far: 0.7525 
+1 (train): Batch   299 (has 1000 samples). Processed 299000 samples. Loss so far: 1.4609.  MRR so far: 0.7590 
+1 (train): Batch   399 (has 1000 samples). Processed 399000 samples. Loss so far: 1.4215.  MRR so far: 0.7653 
+[K  Epoch 1 (train) took 29661.24s [processed 13 samples/second]
+ Training Loss: 1.417167
+  Epoch 1 (valid) took 634.64s [processed 36 samples/second]
+ Validation:  Loss: 2.322438 | MRR: 0.636460
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz'.
+==== Epoch 2 ====
+2 (train): Batch    99 (has 1000 samples). Processed 99000 samples. Loss so far: 0.9409.  MRR so far: 0.8419 
+2 (train): Batch   199 (has 1000 samples). Processed 199000 samples. Loss so far: 0.9495.  MRR so far: 0.8405 
+2 (train): Batch   299 (has 1000 samples). Processed 299000 samples. Loss so far: 0.9547.  MRR so far: 0.8395 
+2 (train): Batch   399 (has 1000 samples). Processed 399000 samples. Loss so far: 0.9597.  MRR so far: 0.8389 
+[K  Epoch 2 (train) took 29605.25s [processed 13 samples/second]
+ Training Loss: 0.959814
+  Epoch 2 (valid) took 651.43s [processed 35 samples/second]
+ Validation:  Loss: 2.284845 | MRR: 0.652445
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz'.
+==== Epoch 3 ====
+3 (train): Batch    99 (has 1000 samples). Processed 99000 samples. Loss so far: 0.6889.  MRR so far: 0.8835 
+slurmstepd: error: acct_gather_profile/influxdb _send_data: curl_easy_perform failed to send data (discarded). Reason: Couldn't resolve host name
+3 (train): Batch   199 (has 1000 samples). Processed 199000 samples. Loss so far: 0.7199.  MRR so far: 0.8783 
+3 (train): Batch   299 (has 1000 samples). Processed 299000 samples. Loss so far: 0.7375.  MRR so far: 0.8752 
+3 (train): Batch   399 (has 1000 samples). Processed 399000 samples. Loss so far: 0.7496.  MRR so far: 0.8730 
+[K  Epoch 3 (train) took 28143.85s [processed 14 samples/second]
+ Training Loss: 0.750569
+  Epoch 3 (valid) took 606.82s [processed 37 samples/second]
+ Validation:  Loss: 2.256044 | MRR: 0.657713
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz'.
+==== Epoch 4 ====
+4 (train): Batch    99 (has 1000 samples). Processed 99000 samples. Loss so far: 0.5741.  MRR so far: 0.9020 
+4 (train): Batch   199 (has 1000 samples). Processed 199000 samples. Loss so far: 0.5925.  MRR so far: 0.8990 
+4 (train): Batch   299 (has 1000 samples). Processed 299000 samples. Loss so far: 0.6078.  MRR so far: 0.8961 
+4 (train): Batch   399 (has 1000 samples). Processed 399000 samples. Loss so far: 0.6218.  MRR so far: 0.8936 
+[K  Epoch 4 (train) took 28063.22s [processed 14 samples/second]
+ Training Loss: 0.622886
+  Epoch 4 (valid) took 710.23s [processed 32 samples/second]
+ Validation:  Loss: 2.295184 | MRR: 0.659456
+  Best result so far -- saved model as '/network/home/jangeunb/CodeSearchNet/resources/saved_models/informed_gpu:2_batch:1000_model_best.pkl.gz'.
+==== Epoch 5 ====
+5 (train): Batch    99 (has 1000 samples). Processed 99000 samples. Loss so far: 0.4865.  MRR so far: 0.9166 
+5 (train): Batch   199 (has 1000 samples). Processed 199000 samples. Loss so far: 0.5075.  MRR so far: 0.9124 
+slurmstepd: error: *** JOB 429649 ON mila02 CANCELLED AT 2020-05-14T17:29:39 DUE TO TIME LIMIT ***
+
+======== GPU REPORT ========
+
+==============NVSMI LOG==============
+
+Timestamp                           : Thu May 14 17:30:09 2020
+Driver Version                      : 418.116.00
+CUDA Version                        : 10.1
+
+Attached GPUs                       : 2
+GPU 00000000:0B:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+GPU 00000000:86:00.0
+    Accounting Mode                 : Enabled
+    Accounting Mode Buffer Size     : 4000
+    Accounted Processes             : None
+
+Thu May 14 17:30:09 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.116.00   Driver Version: 418.116.00   CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+| N/A   28C    P0    40W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+| N/A   30C    P0    41W / 163W |      0MiB / 32480MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+

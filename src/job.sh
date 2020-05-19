@@ -2,7 +2,7 @@
 #SBATCH --partition=main
 #SBATCH --gres=gpu:v100-32gb:2
 #SBATCH --mem=32G
-#SBATCH --time=48:00:00
+#SBATCH --time=24:00:00
 #SBATCH --job-name=informed_gpu:2_batch:1000
 #SBATCH -o /network/home/jangeunb/CodeSearchNet/src/output/%j_informed_gpu:2_batch:1000.out
 
